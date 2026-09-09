@@ -254,6 +254,18 @@ describe("Mobile Navigation", () => {
     expect(onClose).toHaveBeenCalled()
   })
 
+  it("enables scrolling in mobile navigation drawer and locks body scroll", () => {
+    const { unmount } = render(<MobileNavigation isOpen={true} onClose={() => {}} onOpen={() => {}} />)
+    const mobileNav = screen.getByRole("navigation", { name: /navigasi mobile/i })
+    expect(mobileNav.className).toContain("overflow-y-auto")
+    expect(mobileNav.className).toContain("flex-1")
+    expect(mobileNav.className).toContain("min-h-0")
+    expect(document.body.style.overflow).toBe("hidden")
+
+    unmount()
+    expect(document.body.style.overflow).toBe("")
+  })
+
   it("restores focus to the mobile trigger after controlled close", () => {
     render(<Header />)
 
