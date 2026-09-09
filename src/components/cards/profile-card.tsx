@@ -29,14 +29,14 @@ export function ProfileCard({ href, profile }: ProfileCardProps) {
       : (href ?? (isLecturer ? `/sdm/dosen/${profile.slug}` : undefined))
 
   return (
-    <article className="group flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-200 hover:border-[#006569] hover:shadow-md">
+    <article className="group flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#006569] hover:-translate-y-1 hover:shadow-card-hover">
       <div>
         <div className="flex items-start gap-4">
           <div className="relative flex size-16 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-slate-200 bg-slate-100 font-sans text-base font-bold text-slate-700">
             {photo ? (
               <img
                 alt={`Foto ${profile.name}`}
-                className="size-full object-cover object-top"
+                className="size-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
                 height="64"
                 src={photo}
                 width="64"

@@ -41,7 +41,7 @@ export function AcademicHighlights() {
           </div>
 
           <div className="space-y-6 lg:col-span-7">
-            <div className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
+            <div className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm transition-all duration-300 ease-out hover:border-[#006569]/60 hover:shadow-card-hover hover:-translate-y-0.5">
               <div className="flex items-center gap-3.5">
                 <span className="flex size-10 items-center justify-center rounded-lg bg-slate-100 text-[#006569]">
                   <Globe2 aria-hidden="true" className="size-5" />
@@ -73,7 +73,7 @@ export function AcademicHighlights() {
               </div>
             </div>
 
-            <div className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
+            <div className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm transition-all duration-300 ease-out hover:border-[#006569]/60 hover:shadow-card-hover hover:-translate-y-0.5">
               <div className="flex items-center gap-3.5">
                 <span className="flex size-10 items-center justify-center rounded-lg bg-slate-100 text-[#006569]">
                   <Compass aria-hidden="true" className="size-5" />
@@ -109,7 +109,7 @@ export function AcademicHighlights() {
               </div>
             </div>
 
-            <div className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
+            <div className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm transition-all duration-300 ease-out hover:border-[#006569]/60 hover:shadow-card-hover hover:-translate-y-0.5">
               <div className="flex items-center gap-3.5">
                 <span className="flex size-10 items-center justify-center rounded-lg bg-slate-100 text-[#006569]">
                   <Award aria-hidden="true" className="size-5" />

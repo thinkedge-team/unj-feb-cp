@@ -66,7 +66,7 @@ export function QuickAccess() {
             return (
               <a
                 key={item.title}
-                className="group flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-200 hover:border-[#006569] hover:shadow-md"
+                className="group flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#006569] hover:-translate-y-1 hover:shadow-card-hover"
                 href={item.href}
               >
                 <div>

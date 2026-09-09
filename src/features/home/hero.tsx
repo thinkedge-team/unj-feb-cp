@@ -5,12 +5,12 @@ export function Hero() {
   return (
     <section
       aria-labelledby="hero-title"
-      className="relative border-b border-slate-200 bg-white py-12 md:py-16 lg:py-20"
+      className="relative overflow-hidden border-b border-slate-200 bg-white py-12 md:py-16 lg:py-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
           <div className="space-y-6 lg:col-span-7">
-            <div className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700">
+            <div className="animate-fade-in-up inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-2xs">
               <span className="text-[#C45F18] font-bold">FEB UNJ</span>
               <span className="text-slate-300">|</span>
               <span className="inline-flex items-center gap-1 text-slate-600">
@@ -21,27 +21,27 @@ export function Hero() {
 
             <h1
               id="hero-title"
-              className="font-sans text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl md:text-5xl lg:text-[52px] lg:leading-[1.12]"
+              className="animate-fade-in-up animation-delay-100 font-sans text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl md:text-5xl lg:text-[52px] lg:leading-[1.12]"
             >
               Mencerdaskan, Memartabatkan, Menggerakkan Ekonomi Berkelanjutan
             </h1>
 
-            <p className="max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
+            <p className="animate-fade-in-up animation-delay-200 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
               Pusat keunggulan pendidikan ekonomi, manajemen, dan akuntansi yang memadukan
               integritas akademik berstandar internasional dengan komitmen nyata mendorong
               transformasi ekonomi berkeadilan dan berwawasan lingkungan.
             </p>
 
-            <div className="flex flex-wrap items-center gap-3 pt-1">
+            <div className="animate-fade-in-up animation-delay-300 flex flex-wrap items-center gap-3 pt-1">
               <a
-                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-[#006569] px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#004e51]"
+                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-[#006569] px-6 py-2.5 text-sm font-semibold text-white shadow-xs transition-all duration-200 hover:bg-[#004e51] hover:shadow-md active:scale-[0.98]"
                 href="/program-studi"
               >
                 <span>Jelajahi Program Studi</span>
-                <ArrowRight aria-hidden="true" className="size-4" />
+                <ArrowRight aria-hidden="true" className="size-4 transition-transform duration-200 group-hover:translate-x-0.5" />
               </a>
               <a
-                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 hover:text-slate-900"
+                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 shadow-2xs transition-all duration-200 hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900 active:scale-[0.98]"
                 href="/dokumen"
               >
                 <Download aria-hidden="true" className="size-4 text-slate-500" />
@@ -51,7 +51,7 @@ export function Hero() {
 
             <form
               action="/informasi"
-              className="mt-4 flex max-w-md items-center rounded-lg border border-slate-200 bg-slate-50/70 p-1 transition-colors focus-within:border-[#006569] focus-within:bg-white focus-within:ring-1 focus-within:ring-[#006569]"
+              className="animate-fade-in-up animation-delay-400 mt-4 flex max-w-md items-center rounded-lg border border-slate-200 bg-slate-50/70 p-1 transition-all duration-200 focus-within:border-[#006569] focus-within:bg-white focus-within:ring-2 focus-within:ring-[#006569]/20 shadow-2xs"
               method="get"
               role="search"
             >
@@ -67,7 +67,7 @@ export function Hero() {
                 type="search"
               />
               <button
-                className="inline-flex min-h-8 items-center justify-center rounded-md bg-[#006569] px-4 text-xs font-semibold text-white transition-colors hover:bg-[#004e51]"
+                className="inline-flex min-h-8 items-center justify-center rounded-md bg-[#006569] px-4 text-xs font-semibold text-white transition-all duration-150 hover:bg-[#004e51] active:scale-[0.97]"
                 type="submit"
               >
                 Cari
@@ -75,12 +75,12 @@ export function Hero() {
             </form>
           </div>
 
-          <div className="lg:col-span-5">
-            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-              <div className="relative aspect-[4/3] w-full sm:aspect-[16/11]">
+          <div className="animate-fade-in-up animation-delay-200 lg:col-span-5">
+            <div className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:border-slate-300">
+              <div className="relative aspect-[4/3] w-full overflow-hidden sm:aspect-[16/11]">
                 <Image
                   alt="Kampus Fakultas Ekonomi dan Bisnis Universitas Negeri Jakarta"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   height={720}
                   priority
                   src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=80"

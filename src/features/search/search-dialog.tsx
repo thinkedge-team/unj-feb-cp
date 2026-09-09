@@ -114,7 +114,7 @@ export function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
         onClick={onClose}
       />
 
-      <div className="relative w-full max-w-2xl overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-white)] shadow-2xl transition-all">
+      <div className="relative w-full max-w-2xl overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-white)] shadow-2xl transition-all animate-scale-in">
         <h2 className="sr-only" id={`search-dialog-title-${dialogId}`}>
           Pencarian Informasi Portal FEB UNJ
         </h2>

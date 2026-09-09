@@ -21,7 +21,7 @@ export function degreeBadge(degree: DegreeLevel): string {
 
 export function StudyProgramCard({ program }: Readonly<{ readonly program: StudyProgram }>) {
   return (
-    <article className="group flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-200 hover:border-[#006569] hover:shadow-md">
+    <article className="group flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#006569] hover:-translate-y-1 hover:shadow-card-hover">
       <div>
         <div className="flex items-center justify-between gap-2">
           <div className="flex items-center gap-2">

@@ -14,7 +14,7 @@ export function NewsCard({ article, href, variant = "vertical" }: NewsCardProps)
 
   if (variant === "horizontal") {
     return (
-      <article className="group flex h-full items-center gap-3.5 sm:gap-4 overflow-hidden rounded-xl border border-slate-200/90 bg-white p-3.5 shadow-xs transition-all duration-200 hover:border-[#006569] hover:shadow-md sm:p-4">
+      <article className="group flex h-full items-center gap-3.5 sm:gap-4 overflow-hidden rounded-xl border border-slate-200/90 bg-white p-3.5 shadow-xs transition-all duration-300 ease-out hover:border-[#006569] hover:-translate-y-0.5 hover:shadow-card-hover sm:p-4">
         <div className="relative aspect-[4/3] w-28 sm:w-36 shrink-0 overflow-hidden rounded-lg bg-slate-100">
           {article.image ? (
             <img
@@ -72,7 +72,7 @@ export function NewsCard({ article, href, variant = "vertical" }: NewsCardProps)
   }
 
   return (
-    <article className="group flex h-full flex-col justify-between overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-200 hover:border-[#006569] hover:shadow-md">
+    <article className="group flex h-full flex-col justify-between overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-300 ease-out hover:border-[#006569] hover:-translate-y-1 hover:shadow-card-hover">
       <div>
         <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100">
           {article.image ? (

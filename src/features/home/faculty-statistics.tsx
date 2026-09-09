@@ -61,10 +61,10 @@ export function FacultyStatistics() {
           {facultyStats.map((item, idx) => (
             <div
               key={item.label}
-              className="flex flex-col justify-between border-t border-white/20 pt-5 sm:border-t-0 sm:border-l sm:pl-6"
+              className="group flex flex-col justify-between border-t border-white/20 pt-5 transition-transform duration-300 hover:-translate-y-1 sm:border-t-0 sm:border-l sm:pl-6"
             >
               <div>
-                <span className="font-mono text-xs text-teal-200">
+                <span className="font-mono text-xs text-teal-200 transition-colors group-hover:text-amber-300">
                   0{idx + 1}
                 </span>
                 <p className="mt-2 font-sans text-4xl font-bold tracking-tight text-white sm:text-5xl tabular-nums">
