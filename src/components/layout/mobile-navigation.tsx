@@ -68,7 +68,7 @@ export function MobileNavigation({ isOpen, onClose, onOpen }: MobileNavigationPr
           aria-expanded={isOpen}
           aria-haspopup="dialog"
           aria-label="Buka menu"
-          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-sm text-[var(--color-unj-teal)] hover:bg-[var(--color-teal-soft)]"
+          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-800 shadow-2xs hover:bg-slate-50 hover:text-[#006569] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#006569] active:scale-95 transition-all"
           onClick={onOpen}
           ref={triggerRef}
           type="button"
@@ -77,11 +77,11 @@ export function MobileNavigation({ isOpen, onClose, onOpen }: MobileNavigationPr
         </button>
       ) : null}
       {isOpen ? (
-        <div className="fixed inset-0 z-50 overflow-hidden bg-[var(--color-ink)]/50 backdrop-blur-xs animate-fade-in" onClick={onClose}>
+        <div className="fixed inset-0 z-50 overflow-hidden bg-slate-900/60 animate-fade-in" onClick={onClose}>
           <aside
             aria-label="Menu navigasi mobile"
             aria-modal="true"
-            className="ml-auto flex h-full max-h-full w-full max-w-sm flex-col bg-[var(--color-limestone)] p-4 shadow-2xl animate-slide-in-right"
+            className="ml-auto flex h-full max-h-full w-full max-w-sm flex-col bg-white p-4 shadow-2xl animate-slide-in-right"
             onClick={(event) => event.stopPropagation()}
             onKeyDown={trapFocus}
             role="dialog"

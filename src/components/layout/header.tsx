@@ -16,6 +16,7 @@ const menuId = (title: string) => `mega-menu-${title.toLowerCase().replaceAll(" 
 
 export function Header() {
   const [activeTitle, setActiveTitle] = useState<string | null>(null)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const activeTriggerRef = useRef<HTMLButtonElement>(null)
   const activeGroup = navigationGroups.find((group) => group.title === activeTitle) ?? null
@@ -51,7 +52,7 @@ export function Header() {
 
   return (
     <header
-      className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/95 backdrop-blur-md transition-shadow"
+      className="sticky top-0 z-40 border-b border-slate-200 bg-white shadow-xs"
       onBlur={closeWhenFocusLeaves}
       onKeyDown={closeOnEscape}
       role="banner"
@@ -127,9 +128,9 @@ export function Header() {
           </Link>
 
           <MobileNavigation
-            isOpen={activeTitle === "mobile"}
-            onClose={() => setActiveTitle(null)}
-            onOpen={() => setActiveTitle("mobile")}
+            isOpen={mobileMenuOpen}
+            onClose={() => setMobileMenuOpen(false)}
+            onOpen={() => setMobileMenuOpen(true)}
           />
         </div>
       </div>
