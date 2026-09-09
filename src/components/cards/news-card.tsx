@@ -14,7 +14,7 @@ export function NewsCard({ article, href, variant = "vertical" }: NewsCardProps)
 
   if (variant === "horizontal") {
     return (
-      <article className="group flex h-full items-center gap-3.5 sm:gap-4 overflow-hidden rounded-xl border border-orange-100/90 bg-white p-3.5 shadow-xs transition-all duration-300 ease-out hover:border-[#FE8C43] hover:-translate-y-0.5 hover:shadow-card-hover sm:p-4">
+      <article className="group flex h-full items-center gap-3.5 sm:gap-4 overflow-hidden rounded-xl border border-orange-100/90 border-l-4 border-l-[#FE8C43] bg-white p-3.5 shadow-xs transition-all duration-300 ease-out hover:border-[#FE8C43] hover:-translate-y-0.5 hover:shadow-card-hover sm:p-4">
         <div className="relative aspect-[4/3] w-28 sm:w-36 shrink-0 overflow-hidden rounded-lg bg-slate-100">
           {article.image ? (
             <img
@@ -72,7 +72,7 @@ export function NewsCard({ article, href, variant = "vertical" }: NewsCardProps)
   }
 
   return (
-    <article className="group flex h-full flex-col justify-between overflow-hidden rounded-xl border border-orange-100/90 bg-white shadow-sm transition-all duration-300 ease-out hover:border-[#FE8C43] hover:-translate-y-1 hover:shadow-card-hover">
+    <article className="group flex h-full flex-col justify-between overflow-hidden rounded-xl border border-orange-100/90 border-t-4 border-t-[#FE8C43] bg-white shadow-sm transition-all duration-300 ease-out hover:border-[#FE8C43] hover:-translate-y-1 hover:shadow-card-hover">
       <div>
         <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100">
           {article.image ? (

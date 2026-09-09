@@ -29,7 +29,7 @@ export function ProfileCard({ href, profile }: ProfileCardProps) {
       : (href ?? (isLecturer ? `/sdm/dosen/${profile.slug}` : undefined))
 
   return (
-    <article className="group flex h-full flex-col justify-between rounded-xl border border-orange-100/90 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#FE8C43] hover:-translate-y-1 hover:shadow-card-hover">
+    <article className="group flex h-full flex-col justify-between rounded-xl border border-orange-100/90 border-t-4 border-t-[#FE8C43] bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#FE8C43] hover:-translate-y-1 hover:shadow-card-hover">
       <div>
         <div className="flex items-start gap-4">
           <div className="relative flex size-16 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-orange-200/80 bg-orange-50 font-sans text-base font-bold text-slate-700">

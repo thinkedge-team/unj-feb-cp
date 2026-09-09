@@ -77,20 +77,30 @@ h6 {
 @layer utilities {
   .bg-academic-grid {
     background-image: 
-      linear-gradient(to right, rgba(234, 88, 12, 0.08) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(234, 88, 12, 0.08) 1px, transparent 1px);
-    background-size: 36px 36px;
+      linear-gradient(to right, rgba(249, 115, 22, 0.14) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(249, 115, 22, 0.14) 1px, transparent 1px);
+    background-size: 32px 32px;
   }
 
   .bg-academic-dots {
-    background-image: radial-gradient(rgba(249, 115, 22, 0.16) 1.25px, transparent 1.25px);
-    background-size: 24px 24px;
+    background-image: radial-gradient(rgba(249, 115, 22, 0.25) 1.5px, transparent 1.5px);
+    background-size: 20px 20px;
   }
 
   .bg-radial-mesh {
     background-image: 
-      radial-gradient(at 0% 0%, rgba(254, 140, 67, 0.12) 0px, transparent 50%),
-      radial-gradient(at 100% 100%, rgba(249, 115, 22, 0.08) 0px, transparent 50%);
+      radial-gradient(at 0% 0%, rgba(254, 140, 67, 0.20) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(249, 115, 22, 0.15) 0px, transparent 50%);
+  }
+
+  .bg-diagonal-accent {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      rgba(249, 115, 22, 0.06),
+      rgba(249, 115, 22, 0.06) 1px,
+      transparent 1px,
+      transparent 12px
+    );
   }
 }
 

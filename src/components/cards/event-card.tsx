@@ -11,7 +11,7 @@ export function EventCard({ event, href }: Readonly<{ readonly event: Event; rea
   const isExternal = targetHref.startsWith("http")
 
   return (
-    <article className="group flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#C2410C] hover:-translate-y-1 hover:shadow-card-hover">
+    <article className="group flex h-full flex-col justify-between rounded-xl border border-orange-100/90 border-t-4 border-t-[#FE8C43] bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#FE8C43] hover:-translate-y-1 hover:shadow-card-hover">
       <div>
         <div className="flex items-start gap-4">
           <time

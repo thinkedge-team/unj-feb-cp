@@ -7,7 +7,7 @@ export function DocumentCard({ document }: Readonly<{ readonly document: Documen
   const year = new Intl.DateTimeFormat("id-ID", { year: "numeric" }).format(new Date(document.publishedAt))
 
   return (
-    <article className="group flex h-full flex-col justify-between rounded-xl border border-orange-100/90 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#FE8C43] hover:-translate-y-1 hover:shadow-card-hover">
+    <article className="group flex h-full flex-col justify-between rounded-xl border border-orange-100/90 border-t-4 border-t-[#FE8C43] bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#FE8C43] hover:-translate-y-1 hover:shadow-card-hover">
       <div>
         <div className="flex items-start justify-between gap-4">
           <div className="flex size-10 items-center justify-center rounded-lg bg-orange-100/80 text-[#EA580C] shadow-2xs">

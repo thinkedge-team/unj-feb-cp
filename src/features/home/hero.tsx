@@ -31,6 +31,12 @@ export function Hero() {
               Mencerdaskan, Memartabatkan, Menggerakkan Ekonomi Berkelanjutan
             </h1>
 
+            <div className="flex items-center gap-1.5">
+              <span className="h-1.5 w-14 rounded-full bg-gradient-to-r from-[#F97316] to-[#FE8C43]" />
+              <span className="h-1.5 w-3.5 rounded-full bg-orange-300" />
+              <span className="h-1.5 w-1.5 rounded-full bg-orange-200" />
+            </div>
+
             <p className="max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
               Pusat keunggulan pendidikan ekonomi, manajemen, dan akuntansi yang memadukan
               integritas akademik berstandar internasional dengan komitmen nyata mendorong
@@ -78,6 +84,25 @@ export function Hero() {
                 Cari
               </button>
             </form>
+
+            <div className="mt-8 pt-6 border-t border-orange-200/90 grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <div className="border-l-3 border-[#FE8C43] pl-3 py-0.5">
+                <span className="font-sans text-2xl font-black text-slate-900 tracking-tight">21</span>
+                <p className="text-[11px] font-bold uppercase tracking-wider text-[#EA580C]">Program Studi</p>
+              </div>
+              <div className="border-l-3 border-[#FE8C43] pl-3 py-0.5">
+                <span className="font-sans text-2xl font-black text-slate-900 tracking-tight">120+</span>
+                <p className="text-[11px] font-bold uppercase tracking-wider text-[#EA580C]">Dosen &amp; Peneliti</p>
+              </div>
+              <div className="border-l-3 border-[#FE8C43] pl-3 py-0.5">
+                <span className="font-sans text-2xl font-black text-slate-900 tracking-tight">5.000+</span>
+                <p className="text-[11px] font-bold uppercase tracking-wider text-[#EA580C]">Mahasiswa Aktif</p>
+              </div>
+              <div className="border-l-3 border-[#FE8C43] pl-3 py-0.5">
+                <span className="font-sans text-2xl font-black text-slate-900 tracking-tight">40+</span>
+                <p className="text-[11px] font-bold uppercase tracking-wider text-[#EA580C]">Mitra Industri</p>
+              </div>
+            </div>
           </div>
 
           <div className="lg:col-span-5 relative">

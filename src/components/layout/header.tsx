@@ -57,7 +57,24 @@ export function Header() {
       onKeyDown={closeOnEscape}
       role="banner"
     >
-      <div className="h-1 bg-gradient-to-r from-[#F97316] via-[#FE8C43] to-[#F97316]" />
+      {/* Official FEB UNJ Top Announcement Ribbon */}
+      <div className="bg-gradient-to-r from-[#EA580C] via-[#FE8C43] to-[#F97316] text-white px-4 py-1.5 text-[11px] font-semibold tracking-tight shadow-2xs">
+        <div className="mx-auto max-w-7xl flex items-center justify-between gap-4">
+          <div className="flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap">
+            <span className="rounded bg-white/25 px-1.5 py-0.5 text-[9px] font-extrabold uppercase tracking-wider text-white">
+              Warta Resmi
+            </span>
+            <span className="truncate">
+              Portal Resmi Fakultas Ekonomi dan Bisnis Universitas Negeri Jakarta &bull; Akreditasi Unggul BAN-PT &amp; FIBAA Internasional
+            </span>
+          </div>
+          <div className="hidden lg:flex items-center gap-3 shrink-0 text-white/90 text-[11px]">
+            <span>Gedung M Kampus A Rawamangun</span>
+            <span className="text-white/50">&bull;</span>
+            <a href="tel:+62214721340" className="hover:underline hover:text-white">Telp: (021) 4721340</a>
+          </div>
+        </div>
+      </div>
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         <Link
           aria-label="FEB UNJ - Beranda"
