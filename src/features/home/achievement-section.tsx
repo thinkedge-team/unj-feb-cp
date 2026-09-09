@@ -76,11 +76,11 @@ export function AchievementSection() {
           {achievements.map((item) => (
             <div
               key={item.title}
-              className="flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-200 hover:border-[#006569] hover:shadow-md"
+              className="group flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#006569] hover:-translate-y-1 hover:shadow-card-hover"
             >
               <div>
                 <div className="flex items-center justify-between">
-                  <span className="inline-flex items-center gap-1.5 rounded-md border border-amber-200 bg-amber-50 px-2.5 py-0.5 text-xs font-semibold text-amber-800">
+                  <span className="inline-flex items-center gap-1.5 rounded-md border border-amber-200 bg-amber-50 px-2.5 py-0.5 text-xs font-semibold text-amber-800 transition-colors group-hover:bg-amber-100/80">
                     <Trophy aria-hidden="true" className="size-3.5 text-amber-600" />
                     <span>Tingkat {item.level}</span>
                   </span>
@@ -89,7 +89,7 @@ export function AchievementSection() {
                   </span>
                 </div>
 
-                <h3 className="mt-4 font-sans text-lg font-bold tracking-tight text-slate-900 leading-snug">
+                <h3 className="mt-4 font-sans text-lg font-bold tracking-tight text-slate-900 leading-snug transition-colors group-hover:text-[#006569]">
                   {item.title}
                 </h3>
 

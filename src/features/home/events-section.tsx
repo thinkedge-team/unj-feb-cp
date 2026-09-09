@@ -43,9 +43,9 @@ export function EventsSection() {
           ))}
         </div>
 
-        <div className="mt-10 rounded-xl border border-slate-200 bg-slate-50 p-6 flex flex-col items-center justify-between gap-4 sm:flex-row sm:px-8">
+        <div className="mt-10 rounded-xl border border-slate-200 bg-slate-50 p-6 flex flex-col items-center justify-between gap-4 sm:flex-row sm:px-8 transition-all duration-300 hover:shadow-sm hover:border-slate-300">
           <div className="flex items-center gap-3.5">
-            <span className="flex size-10 items-center justify-center rounded-lg bg-white border border-slate-200 text-[#C45F18]">
+            <span className="flex size-10 items-center justify-center rounded-lg bg-white border border-slate-200 text-[#C45F18] shadow-2xs">
               <CalendarDays aria-hidden="true" className="size-5" />
             </span>
             <p className="text-xs font-medium text-slate-600 sm:text-sm">
@@ -53,7 +53,7 @@ export function EventsSection() {
             </p>
           </div>
           <a
-            className="inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-4 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors"
+            className="inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-4 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 hover:text-slate-900 transition-all duration-150 active:scale-[0.98] shadow-2xs"
             href="/kontak"
           >
             <span>Hubungi Bagian Humas</span>

@@ -106,7 +106,7 @@ export function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
     <div
       aria-labelledby={`search-dialog-title-${dialogId}`}
       aria-modal="true"
-      className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-black/60 p-4 pt-[10vh] backdrop-blur-sm sm:p-6 sm:pt-[12vh]"
+      className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-black/60 p-4 pt-[10vh] backdrop-blur-sm sm:p-6 sm:pt-[12vh] animate-fade-in"
       role="dialog"
     >
       <div
@@ -114,7 +114,7 @@ export function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
         onClick={onClose}
       />
 
-      <div className="relative w-full max-w-2xl overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-white)] shadow-2xl transition-all animate-scale-in">
+      <div className="relative w-full max-w-2xl overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-white)] shadow-2xl animate-scale-in">
         <h2 className="sr-only" id={`search-dialog-title-${dialogId}`}>
           Pencarian Informasi Portal FEB UNJ
         </h2>

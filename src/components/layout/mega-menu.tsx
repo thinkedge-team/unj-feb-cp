@@ -29,7 +29,7 @@ export function MegaMenu({ activeGroup, isOpen, onClose }: MegaMenuProps) {
   return (
     <div
       aria-label={`${activeGroup.title} submenu`}
-      className="animate-fade-in-down absolute left-0 right-0 top-full z-30 border-b border-slate-200 bg-white shadow-lg"
+      className="animate-fade-in absolute left-0 right-0 top-full z-30 border-b border-slate-200 bg-white/98 backdrop-blur-md shadow-lg"
       id={id}
       role="region"
     >

@@ -10,7 +10,7 @@ export function Hero() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
           <div className="space-y-6 lg:col-span-7">
-            <div className="animate-fade-in-up inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-2xs">
+            <div className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-2xs">
               <span className="text-[#C45F18] font-bold">FEB UNJ</span>
               <span className="text-slate-300">|</span>
               <span className="inline-flex items-center gap-1 text-slate-600">
@@ -21,18 +21,18 @@ export function Hero() {
 
             <h1
               id="hero-title"
-              className="animate-fade-in-up animation-delay-100 font-sans text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl md:text-5xl lg:text-[52px] lg:leading-[1.12]"
+              className="font-sans text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl md:text-5xl lg:text-[52px] lg:leading-[1.12]"
             >
               Mencerdaskan, Memartabatkan, Menggerakkan Ekonomi Berkelanjutan
             </h1>
 
-            <p className="animate-fade-in-up animation-delay-200 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
+            <p className="max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
               Pusat keunggulan pendidikan ekonomi, manajemen, dan akuntansi yang memadukan
               integritas akademik berstandar internasional dengan komitmen nyata mendorong
               transformasi ekonomi berkeadilan dan berwawasan lingkungan.
             </p>
 
-            <div className="animate-fade-in-up animation-delay-300 flex flex-wrap items-center gap-3 pt-1">
+            <div className="flex flex-wrap items-center gap-3 pt-1">
               <a
                 className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-[#006569] px-6 py-2.5 text-sm font-semibold text-white shadow-xs transition-all duration-200 hover:bg-[#004e51] hover:shadow-md active:scale-[0.98]"
                 href="/program-studi"
@@ -51,7 +51,7 @@ export function Hero() {
 
             <form
               action="/informasi"
-              className="animate-fade-in-up animation-delay-400 mt-4 flex max-w-md items-center rounded-lg border border-slate-200 bg-slate-50/70 p-1 transition-all duration-200 focus-within:border-[#006569] focus-within:bg-white focus-within:ring-2 focus-within:ring-[#006569]/20 shadow-2xs"
+              className="mt-4 flex max-w-md items-center rounded-lg border border-slate-200 bg-slate-50/70 p-1 transition-all duration-200 focus-within:border-[#006569] focus-within:bg-white focus-within:ring-2 focus-within:ring-[#006569]/20 shadow-2xs"
               method="get"
               role="search"
             >
@@ -75,7 +75,7 @@ export function Hero() {
             </form>
           </div>
 
-          <div className="animate-fade-in-up animation-delay-200 lg:col-span-5">
+          <div className="lg:col-span-5">
             <div className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:border-slate-300">
               <div className="relative aspect-[4/3] w-full overflow-hidden sm:aspect-[16/11]">
                 <Image

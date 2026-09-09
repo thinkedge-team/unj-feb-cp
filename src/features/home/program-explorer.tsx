@@ -66,9 +66,9 @@ export function ProgramExplorer() {
                 <button
                   key={tab}
                   aria-selected={isActive}
-                  className={`min-h-9 rounded-md px-4 py-1.5 text-xs font-semibold tracking-tight transition-colors ${
+                  className={`min-h-9 rounded-md px-4 py-1.5 text-xs font-semibold tracking-tight transition-all duration-150 active:scale-[0.98] ${
                     isActive
-                      ? "bg-[#006569] text-white"
+                      ? "bg-[#006569] text-white shadow-xs"
                       : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
                   }`}
                   onClick={() => setActiveTab(tab)}
@@ -82,7 +82,7 @@ export function ProgramExplorer() {
           </div>
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div key={activeTab} className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 animate-fade-in">
           {filteredPrograms.map((program) => (
             <StudyProgramCard key={program.slug} program={program} />
           ))}

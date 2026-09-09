@@ -41,12 +41,12 @@ export function NewsSection() {
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-12 items-stretch">
-          <article className="group flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-xs transition-all duration-300 hover:border-[#006569] hover:shadow-md lg:col-span-7">
+          <article className="group flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-xs transition-all duration-300 ease-out hover:border-[#006569] hover:-translate-y-1 hover:shadow-card-hover lg:col-span-7">
             <div>
               <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
                 <img
                   alt={`Foto berita utama: ${featuredArticle.title}`}
-                  className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="size-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                   height="450"
                   src={featuredArticle.image || "/images/news/campus.jpg"}
                   width="720"

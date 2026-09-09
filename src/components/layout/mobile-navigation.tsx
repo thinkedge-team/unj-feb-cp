@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react"
 import type { KeyboardEvent as ReactKeyboardEvent } from "react"
 import Link from "next/link"
-import { Menu, X } from "lucide-react"
+import { ChevronDown, Menu, X } from "lucide-react"
 
 import { navigationGroups } from "@/config/navigation"
 
@@ -77,11 +77,11 @@ export function MobileNavigation({ isOpen, onClose, onOpen }: MobileNavigationPr
         </button>
       ) : null}
       {isOpen ? (
-        <div className="fixed inset-0 z-50 overflow-hidden bg-[var(--color-ink)]/40" onClick={onClose}>
+        <div className="fixed inset-0 z-50 overflow-hidden bg-[var(--color-ink)]/50 backdrop-blur-xs animate-fade-in" onClick={onClose}>
           <aside
             aria-label="Menu navigasi mobile"
             aria-modal="true"
-            className="ml-auto flex h-full max-h-full w-full max-w-sm flex-col bg-[var(--color-limestone)] p-4 shadow-xl"
+            className="ml-auto flex h-full max-h-full w-full max-w-sm flex-col bg-[var(--color-limestone)] p-4 shadow-2xl animate-slide-in-right"
             onClick={(event) => event.stopPropagation()}
             onKeyDown={trapFocus}
             role="dialog"
@@ -90,7 +90,7 @@ export function MobileNavigation({ isOpen, onClose, onOpen }: MobileNavigationPr
               <p className="font-semibold text-[var(--color-unj-teal)]">FEB UNJ</p>
               <button
                 aria-label="Tutup menu"
-                className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-sm text-[var(--color-unj-teal)] hover:bg-[var(--color-teal-soft)]"
+                className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-sm text-[var(--color-unj-teal)] hover:bg-[var(--color-teal-soft)] transition-colors active:scale-95"
                 onClick={onClose}
                 ref={closeButtonRef}
                 type="button"
@@ -100,15 +100,16 @@ export function MobileNavigation({ isOpen, onClose, onOpen }: MobileNavigationPr
             </div>
             <nav aria-label="Navigasi mobile" className="mt-3 flex-1 min-h-0 overflow-y-auto overscroll-contain pr-1">
               {navigationGroups.map((group) => (
-                <details className="border-b border-[var(--color-border)]" key={group.href}>
-                  <summary className="flex min-h-11 cursor-pointer items-center px-2 py-2 font-semibold text-[var(--color-ink)]">
-                    {group.title}
+                <details className="group/details border-b border-[var(--color-border)]" key={group.href}>
+                  <summary className="flex min-h-11 cursor-pointer items-center justify-between px-2 py-2 font-semibold text-[var(--color-ink)] hover:text-[var(--color-unj-teal)] transition-colors list-none [&::-webkit-details-marker]:hidden">
+                    <span>{group.title}</span>
+                    <ChevronDown aria-hidden="true" className="size-4 text-slate-400 transition-transform duration-200 group-open/details:rotate-180 group-open/details:text-[var(--color-unj-teal)]" />
                   </summary>
                   <ul className="pb-2">
                     {group.items.map((item) => (
                       <li key={item.href}>
                         <Link
-                          className="flex min-h-11 items-center px-4 py-2 text-sm text-[var(--color-muted-ink)] hover:bg-[var(--color-teal-soft)] hover:text-[var(--color-teal-deep)]"
+                          className="flex min-h-11 items-center px-4 py-2 text-sm text-[var(--color-muted-ink)] hover:bg-[var(--color-teal-soft)] hover:text-[var(--color-teal-deep)] rounded-sm transition-colors"
                           href={item.href}
                           onClick={onClose}
                         >
