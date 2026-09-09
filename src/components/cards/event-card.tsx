@@ -15,18 +15,18 @@ export function EventCard({ event, href }: Readonly<{ readonly event: Event; rea
       <div>
         <div className="flex items-start gap-4">
           <time
-            className="flex size-14 shrink-0 flex-col items-center justify-center rounded-lg bg-orange-50 text-slate-800 border border-orange-200/60"
+            className="flex size-14 shrink-0 flex-col items-center justify-center rounded-lg bg-gradient-to-b from-[#F97316] to-[#FE8C43] text-white shadow-xs"
             dateTime={event.startsAt}
           >
-            <span className="font-sans text-xl font-bold leading-none text-[#C2410C]">{day}</span>
-            <span className="mt-0.5 text-[10px] font-bold uppercase tracking-wider text-[#EA580C]">{month}</span>
+            <span className="font-sans text-xl font-black leading-none text-white">{day}</span>
+            <span className="mt-0.5 text-[10px] font-bold uppercase tracking-wider text-white/95">{month}</span>
           </time>
 
           <div className="min-w-0 flex-1">
-            <span className="inline-flex rounded bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-600">
+            <span className="inline-flex rounded bg-orange-100/70 px-2 py-0.5 text-[10px] font-bold text-[#EA580C]">
               {event.category}
             </span>
-            <h3 className="mt-1.5 font-sans text-base font-bold tracking-tight text-slate-900 leading-snug transition-colors group-hover:text-[#C2410C]">
+            <h3 className="mt-1.5 font-sans text-base font-bold tracking-tight text-slate-900 leading-snug transition-colors group-hover:text-[#EA580C]">
               {event.title}
             </h3>
           </div>
@@ -34,11 +34,11 @@ export function EventCard({ event, href }: Readonly<{ readonly event: Event; rea
 
         <div className="mt-4 space-y-1.5 border-t border-slate-100 pt-3.5 text-xs text-slate-600">
           <p className="flex items-center gap-2">
-            <Clock3 aria-hidden="true" className="size-3.5 text-slate-400 shrink-0" />
+            <Clock3 aria-hidden="true" className="size-3.5 text-[#FE8C43] shrink-0" />
             <span>{time} WIB</span>
           </p>
           <p className="flex items-center gap-2">
-            <MapPin aria-hidden="true" className="size-3.5 text-slate-400 shrink-0" />
+            <MapPin aria-hidden="true" className="size-3.5 text-[#FE8C43] shrink-0" />
             <span className="line-clamp-1">{event.venue}</span>
           </p>
         </div>
@@ -47,7 +47,7 @@ export function EventCard({ event, href }: Readonly<{ readonly event: Event; rea
       <div className="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between">
         <span className="text-[11px] text-slate-400">Agenda Fakultas</span>
         <a
-          className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[#C2410C] hover:text-[#EA580C] transition-colors"
+          className="inline-flex min-h-11 items-center gap-1.5 text-xs font-bold text-[#EA580C] hover:text-[#FE8C43] transition-colors"
           href={targetHref}
           rel={isExternal ? "noopener noreferrer" : undefined}
           target={isExternal ? "_blank" : undefined}

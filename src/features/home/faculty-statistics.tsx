@@ -36,12 +36,12 @@ export function FacultyStatistics() {
   return (
     <section
       aria-labelledby="faculty-statistics-heading"
-      className="border-b border-orange-950/20 bg-gradient-to-br from-[#7C2D12] via-[#9A3412] to-[#C2410C] py-16 md:py-20 text-white"
+      className="border-b border-orange-300 bg-gradient-to-r from-[#F97316] via-[#FE8C43] to-[#F97316] py-16 md:py-20 text-white shadow-xl shadow-orange-500/10"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col justify-between gap-6 border-b border-white/20 pb-8 lg:flex-row lg:items-end">
+        <div className="flex flex-col justify-between gap-6 border-b border-white/30 pb-8 lg:flex-row lg:items-end">
           <div className="max-w-xl">
-            <span className="text-xs font-bold uppercase tracking-wider text-amber-200">
+            <span className="inline-block rounded-md bg-white/25 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-orange-950 backdrop-blur-xs">
               Kapasitas &amp; Akuntabilitas
             </span>
             <h2
@@ -51,7 +51,7 @@ export function FacultyStatistics() {
               Capaian Mutu Berkelanjutan
             </h2>
           </div>
-          <p className="max-w-md text-xs leading-relaxed text-orange-100/90 sm:text-sm">
+          <p className="max-w-md text-xs leading-relaxed text-white/95 sm:text-sm font-medium">
             Angka-angka kinerja akademik mencerminkan dedikasi kolektif dalam menjaga integritas,
             relevansi pembelajaran, dan daya saing global lulusan FEB UNJ.
           </p>
@@ -61,20 +61,20 @@ export function FacultyStatistics() {
           {facultyStats.map((item, idx) => (
             <div
               key={item.label}
-              className="group flex flex-col justify-between border-t border-white/20 pt-5 transition-transform duration-300 hover:-translate-y-1 sm:border-t-0 sm:border-l sm:pl-6"
+              className="group flex flex-col justify-between border-t border-white/25 pt-5 transition-transform duration-300 hover:-translate-y-1 sm:border-t-0 sm:border-l sm:pl-6"
             >
               <div>
-                <span className="font-mono text-xs text-amber-200 transition-colors group-hover:text-amber-300">
+                <span className="font-mono text-xs font-bold text-white/80 transition-colors group-hover:text-white">
                   0{idx + 1}
                 </span>
-                <p className="mt-2 font-sans text-4xl font-bold tracking-tight text-white sm:text-5xl tabular-nums">
+                <p className="mt-2 font-sans text-4xl font-extrabold tracking-tight text-white sm:text-5xl tabular-nums drop-shadow-xs">
                   {item.value}
                 </p>
-                <h3 className="mt-2 text-sm font-bold text-orange-100">
+                <h3 className="mt-2 text-sm font-bold text-white">
                   {item.label}
                 </h3>
               </div>
-              <p className="mt-3 text-xs leading-relaxed text-orange-100/80">
+              <p className="mt-3 text-xs leading-relaxed text-white/90">
                 {item.description}
               </p>
             </div>

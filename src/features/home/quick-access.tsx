@@ -66,21 +66,21 @@ export function QuickAccess() {
             return (
               <a
                 key={item.title}
-                className="group flex flex-col justify-between rounded-xl border border-orange-100/80 bg-[#FFFDFB] p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#C2410C] hover:-translate-y-1 hover:shadow-card-hover"
+                className="group flex flex-col justify-between rounded-xl border border-orange-100/90 bg-[#FFFDFB] p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#FE8C43] hover:-translate-y-1 hover:shadow-card-hover"
                 href={item.href}
               >
                 <div>
                   <div className="flex items-center justify-between">
-                    <span className="flex size-10 items-center justify-center rounded-lg bg-orange-50 text-[#C2410C] transition-colors group-hover:bg-[#C2410C] group-hover:text-white">
+                    <span className="flex size-10 items-center justify-center rounded-lg bg-orange-100/80 text-[#EA580C] transition-colors group-hover:bg-[#FE8C43] group-hover:text-white shadow-2xs">
                       <Icon aria-hidden="true" className="size-5" />
                     </span>
                     <ArrowUpRight
                       aria-hidden="true"
-                      className="size-4 text-slate-400 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-[#C2410C]"
+                      className="size-4 text-slate-400 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-[#FE8C43]"
                     />
                   </div>
 
-                  <h3 className="mt-5 font-sans text-base font-bold tracking-tight text-slate-900 transition-colors group-hover:text-[#C2410C]">
+                  <h3 className="mt-5 font-sans text-base font-bold tracking-tight text-slate-900 transition-colors group-hover:text-[#FE8C43]">
                     {item.title}
                   </h3>
                   <p className="mt-1 text-xs font-semibold text-[#EA580C]">
@@ -91,7 +91,7 @@ export function QuickAccess() {
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-[#C2410C] group-hover:text-[#EA580C] transition-colors">
+                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#EA580C] group-hover:text-[#FE8C43] transition-colors">
                   <span>Buka Halaman</span>
                   <span>&rarr;</span>
                 </div>

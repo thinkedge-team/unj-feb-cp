@@ -10,11 +10,11 @@ export function Hero() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
           <div className="space-y-6 lg:col-span-7">
-            <div className="inline-flex items-center gap-2 rounded-lg border border-orange-200/80 bg-white/90 px-3 py-1 text-xs font-semibold text-slate-700 shadow-2xs">
-              <span className="text-[#C2410C] font-bold">FEB UNJ</span>
-              <span className="text-slate-300">|</span>
-              <span className="inline-flex items-center gap-1 text-slate-600">
-                <ShieldCheck className="size-3.5 text-[#C2410C]" />
+            <div className="inline-flex items-center gap-2 rounded-lg border border-orange-200/80 bg-orange-100/70 px-3 py-1 text-xs font-semibold text-slate-700 shadow-2xs">
+              <span className="text-[#EA580C] font-bold">FEB UNJ</span>
+              <span className="text-orange-300">|</span>
+              <span className="inline-flex items-center gap-1 text-slate-700">
+                <ShieldCheck className="size-3.5 text-[#FE8C43]" />
                 Akreditasi Unggul BAN-PT
               </span>
             </div>
@@ -34,31 +34,31 @@ export function Hero() {
 
             <div className="flex flex-wrap items-center gap-3 pt-1">
               <a
-                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-[#C2410C] px-6 py-2.5 text-sm font-semibold text-white shadow-xs transition-all duration-200 hover:bg-[#9A3412] hover:shadow-md active:scale-[0.98]"
+                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#F97316] to-[#FE8C43] px-6 py-2.5 text-sm font-bold text-white shadow-lg shadow-orange-500/25 transition-all duration-200 hover:from-[#EA580C] hover:to-[#F97316] hover:shadow-xl active:scale-[0.98]"
                 href="/program-studi"
               >
                 <span>Jelajahi Program Studi</span>
                 <ArrowRight aria-hidden="true" className="size-4 transition-transform duration-200 group-hover:translate-x-0.5" />
               </a>
               <a
-                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-orange-200/80 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 shadow-2xs transition-all duration-200 hover:border-orange-300 hover:bg-orange-50/50 hover:text-slate-900 active:scale-[0.98]"
+                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border-2 border-[#FE8C43] bg-white px-5 py-2.5 text-sm font-bold text-[#EA580C] shadow-2xs transition-all duration-200 hover:border-[#F97316] hover:bg-orange-50 hover:text-[#C2410C] active:scale-[0.98]"
                 href="/dokumen"
               >
-                <Download aria-hidden="true" className="size-4 text-slate-500" />
+                <Download aria-hidden="true" className="size-4 text-[#EA580C]" />
                 <span>Unduh Pedoman Akademik</span>
               </a>
             </div>
 
             <form
               action="/informasi"
-              className="mt-4 flex max-w-md items-center rounded-lg border border-orange-200/80 bg-white/95 p-1 transition-all duration-200 focus-within:border-[#C2410C] focus-within:bg-white focus-within:ring-2 focus-within:ring-[#C2410C]/20 shadow-2xs"
+              className="mt-4 flex max-w-md items-center rounded-lg border border-orange-300/80 bg-white/95 p-1 transition-all duration-200 focus-within:border-[#FE8C43] focus-within:bg-white focus-within:ring-2 focus-within:ring-[#FE8C43]/25 shadow-2xs"
               method="get"
               role="search"
             >
               <label className="sr-only" htmlFor="homepage-search-input">
                 Cari informasi, program studi, atau agenda akademik
               </label>
-              <Search aria-hidden="true" className="ml-3 size-4 text-slate-400" />
+              <Search aria-hidden="true" className="ml-3 size-4 text-[#FE8C43]" />
               <input
                 className="w-full border-none bg-transparent px-3 py-1.5 text-xs font-medium text-slate-800 placeholder:text-slate-400 focus:outline-none sm:text-sm"
                 id="homepage-search-input"
@@ -67,7 +67,7 @@ export function Hero() {
                 type="search"
               />
               <button
-                className="inline-flex min-h-8 items-center justify-center rounded-md bg-[#C2410C] px-4 text-xs font-semibold text-white transition-all duration-150 hover:bg-[#9A3412] active:scale-[0.97]"
+                className="inline-flex min-h-8 items-center justify-center rounded-md bg-gradient-to-r from-[#F97316] to-[#FE8C43] px-4 text-xs font-bold text-white transition-all duration-150 hover:from-[#EA580C] hover:to-[#F97316] active:scale-[0.97] shadow-xs"
                 type="submit"
               >
                 Cari
@@ -88,7 +88,7 @@ export function Hero() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-teal-300">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-orange-300">
                     Kampus A Rawamangun, Jakarta Timur
                   </span>
                   <p className="mt-1 font-sans text-base font-bold sm:text-lg">
@@ -99,7 +99,7 @@ export function Hero() {
                     <span className="text-white/40">•</span>
                     <span>120+ Dosen &amp; Peneliti</span>
                     <span className="text-white/40">•</span>
-                    <a className="font-semibold text-amber-300 hover:underline inline-flex items-center gap-1" href="/profil/tentang-feb">
+                    <a className="font-semibold text-orange-300 hover:text-white hover:underline inline-flex items-center gap-1" href="/profil/tentang-feb">
                       Profil <ArrowRight className="size-3" />
                     </a>
                   </div>

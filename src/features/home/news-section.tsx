@@ -41,7 +41,7 @@ export function NewsSection() {
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-12 items-stretch">
-          <article className="group flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-orange-100/90 bg-white shadow-xs transition-all duration-300 ease-out hover:border-[#C2410C] hover:-translate-y-1 hover:shadow-card-hover lg:col-span-7">
+          <article className="group flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-orange-100/90 bg-white shadow-xs transition-all duration-300 ease-out hover:border-[#FE8C43] hover:-translate-y-1 hover:shadow-card-hover lg:col-span-7">
             <div>
               <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
                 <img
@@ -52,7 +52,7 @@ export function NewsSection() {
                   width="720"
                 />
                 <div className="absolute left-4 top-4">
-                  <span className="rounded bg-white/95 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-[#C2410C] shadow-sm">
+                  <span className="rounded bg-[#FE8C43] px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-white shadow-xs">
                     {featuredArticle.category}
                   </span>
                 </div>
@@ -68,7 +68,7 @@ export function NewsSection() {
                   </span>
                 </div>
 
-                <h3 className="mt-3 font-sans text-xl font-bold tracking-tight text-slate-900 leading-snug hover:text-[#C2410C] transition-colors sm:text-2xl line-clamp-2">
+                <h3 className="mt-3 font-sans text-xl font-bold tracking-tight text-slate-900 leading-snug hover:text-[#EA580C] transition-colors sm:text-2xl line-clamp-2">
                   <a href={`/informasi/berita/${featuredArticle.slug}`}>
                     {featuredArticle.title}
                   </a>
@@ -84,7 +84,7 @@ export function NewsSection() {
               <div className="flex items-center justify-between border-t border-slate-100 pt-4">
                 <span className="text-xs font-medium text-slate-400">Liputan Utama</span>
                 <a
-                  className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[#C2410C] hover:text-[#EA580C] transition-colors"
+                  className="inline-flex min-h-11 items-center gap-1.5 text-xs font-bold text-[#EA580C] hover:text-[#FE8C43] transition-colors"
                   href={`/informasi/berita/${featuredArticle.slug}`}
                 >
                   <span>Baca Liputan Lengkap</span>

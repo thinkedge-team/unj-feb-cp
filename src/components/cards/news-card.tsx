@@ -14,7 +14,7 @@ export function NewsCard({ article, href, variant = "vertical" }: NewsCardProps)
 
   if (variant === "horizontal") {
     return (
-      <article className="group flex h-full items-center gap-3.5 sm:gap-4 overflow-hidden rounded-xl border border-slate-200/90 bg-white p-3.5 shadow-xs transition-all duration-300 ease-out hover:border-[#C2410C] hover:-translate-y-0.5 hover:shadow-card-hover sm:p-4">
+      <article className="group flex h-full items-center gap-3.5 sm:gap-4 overflow-hidden rounded-xl border border-orange-100/90 bg-white p-3.5 shadow-xs transition-all duration-300 ease-out hover:border-[#FE8C43] hover:-translate-y-0.5 hover:shadow-card-hover sm:p-4">
         <div className="relative aspect-[4/3] w-28 sm:w-36 shrink-0 overflow-hidden rounded-lg bg-slate-100">
           {article.image ? (
             <img
@@ -30,7 +30,7 @@ export function NewsCard({ article, href, variant = "vertical" }: NewsCardProps)
             </div>
           )}
           <div className="absolute left-2 top-2">
-            <span className="rounded bg-white/95 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider text-[#C2410C] shadow-2xs">
+            <span className="rounded bg-[#FE8C43] px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider text-white shadow-2xs">
               {article.category}
             </span>
           </div>
@@ -47,7 +47,7 @@ export function NewsCard({ article, href, variant = "vertical" }: NewsCardProps)
               </span>
             </p>
 
-            <h3 className="mt-1 font-sans text-sm sm:text-base font-bold tracking-tight text-slate-900 leading-snug transition-colors group-hover:text-[#C2410C] line-clamp-2">
+            <h3 className="mt-1 font-sans text-sm sm:text-base font-bold tracking-tight text-slate-900 leading-snug transition-colors group-hover:text-[#EA580C] line-clamp-2">
               <a href={targetHref}>{article.title}</a>
             </h3>
 
@@ -59,7 +59,7 @@ export function NewsCard({ article, href, variant = "vertical" }: NewsCardProps)
           <div className="mt-2 flex items-center justify-between border-t border-slate-100/80 pt-2">
             <span className="text-[10px] font-medium text-slate-400">Warta Akademik</span>
             <a
-              className="inline-flex min-h-6 items-center gap-1 text-xs font-semibold text-[#C2410C] hover:text-[#EA580C] transition-colors"
+              className="inline-flex min-h-6 items-center gap-1 text-xs font-bold text-[#EA580C] hover:text-[#FE8C43] transition-colors"
               href={targetHref}
             >
               <span>Baca Berita</span>
@@ -72,7 +72,7 @@ export function NewsCard({ article, href, variant = "vertical" }: NewsCardProps)
   }
 
   return (
-    <article className="group flex h-full flex-col justify-between overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-300 ease-out hover:border-[#C2410C] hover:-translate-y-1 hover:shadow-card-hover">
+    <article className="group flex h-full flex-col justify-between overflow-hidden rounded-xl border border-orange-100/90 bg-white shadow-sm transition-all duration-300 ease-out hover:border-[#FE8C43] hover:-translate-y-1 hover:shadow-card-hover">
       <div>
         <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100">
           {article.image ? (
@@ -90,7 +90,7 @@ export function NewsCard({ article, href, variant = "vertical" }: NewsCardProps)
             </div>
           )}
           <div className="absolute left-3 top-3">
-            <span className="rounded bg-white/95 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[#C2410C] shadow-sm">
+            <span className="rounded bg-[#FE8C43] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white shadow-sm">
               {article.category}
             </span>
           </div>
@@ -106,7 +106,7 @@ export function NewsCard({ article, href, variant = "vertical" }: NewsCardProps)
             </span>
           </p>
 
-          <h3 className="mt-2 font-sans text-base font-bold tracking-tight text-slate-900 leading-snug transition-colors group-hover:text-[#C2410C] line-clamp-2">
+          <h3 className="mt-2 font-sans text-base font-bold tracking-tight text-slate-900 leading-snug transition-colors group-hover:text-[#EA580C] line-clamp-2">
             <a href={targetHref}>{article.title}</a>
           </h3>
 
@@ -120,7 +120,7 @@ export function NewsCard({ article, href, variant = "vertical" }: NewsCardProps)
         <div className="flex items-center justify-between border-t border-slate-100 pt-3.5">
           <span className="text-[11px] text-slate-400">Warta Akademik</span>
           <a
-            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[#C2410C] hover:text-[#EA580C] transition-colors"
+            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-bold text-[#EA580C] hover:text-[#FE8C43] transition-colors"
             href={targetHref}
           >
             <span>Baca Berita</span>

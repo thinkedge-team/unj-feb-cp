@@ -76,12 +76,12 @@ export function AchievementSection() {
           {achievements.map((item) => (
             <div
               key={item.title}
-              className="group flex h-full flex-col justify-between rounded-xl border border-orange-100/90 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#C2410C] hover:-translate-y-1 hover:shadow-card-hover"
+              className="group flex h-full flex-col justify-between rounded-xl border border-orange-100/90 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#FE8C43] hover:-translate-y-1 hover:shadow-card-hover"
             >
               <div>
                 <div className="flex items-center justify-between">
-                  <span className="inline-flex items-center gap-1.5 rounded-md border border-amber-200 bg-amber-50 px-2.5 py-0.5 text-xs font-semibold text-amber-800 transition-colors group-hover:bg-amber-100/80">
-                    <Trophy aria-hidden="true" className="size-3.5 text-amber-600" />
+                  <span className="inline-flex items-center gap-1.5 rounded-md border border-orange-200 bg-orange-100/80 px-2.5 py-0.5 text-xs font-bold text-[#EA580C] transition-colors group-hover:bg-orange-200/80">
+                    <Trophy aria-hidden="true" className="size-3.5 text-[#FE8C43]" />
                     <span>Tingkat {item.level}</span>
                   </span>
                   <span className="font-mono text-xs font-semibold text-slate-400">
@@ -89,11 +89,11 @@ export function AchievementSection() {
                   </span>
                 </div>
 
-                <h3 className="mt-4 font-sans text-lg font-bold tracking-tight text-slate-900 leading-snug transition-colors group-hover:text-[#C2410C]">
+                <h3 className="mt-4 font-sans text-lg font-bold tracking-tight text-slate-900 leading-snug transition-colors group-hover:text-[#EA580C]">
                   {item.title}
                 </h3>
 
-                <p className="mt-1.5 text-xs font-semibold text-[#C2410C]">
+                <p className="mt-1.5 text-xs font-semibold text-[#EA580C]">
                   {item.recipient}
                 </p>
 
@@ -104,7 +104,7 @@ export function AchievementSection() {
 
               <div className="mt-5 flex items-center justify-between border-t border-slate-100 pt-3.5 text-xs">
                 <span className="text-slate-400 font-medium">{item.category}</span>
-                <span className="flex items-center gap-1 font-semibold text-[#EA580C]">
+                <span className="flex items-center gap-1 font-semibold text-[#FE8C43]">
                   <Medal aria-hidden="true" className="size-3.5" />
                   Capaian Terpilih
                 </span>
@@ -114,12 +114,12 @@ export function AchievementSection() {
         </div>
 
 
-        <div className="mt-10 border-t border-slate-200/80 pt-6 text-center sm:flex sm:items-center sm:justify-between">
+        <div className="mt-10 border-t border-orange-200/80 pt-6 text-center sm:flex sm:items-center sm:justify-between">
           <p className="text-xs text-slate-500">
             FEB UNJ mendukung pendanaan dan pembimbingan intensif bagi setiap mahasiswa yang berkompetisi.
           </p>
           <a
-            className="mt-4 inline-flex min-h-11 items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C2410C] sm:mt-0 hover:text-[#EA580C] transition-colors"
+            className="mt-4 inline-flex min-h-11 items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#EA580C] sm:mt-0 hover:text-[#FE8C43] transition-colors"
             href="/kemahasiswaan/prestasi"
           >
             <span>Prestasi Kemahasiswaan</span>

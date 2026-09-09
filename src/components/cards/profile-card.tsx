@@ -29,10 +29,10 @@ export function ProfileCard({ href, profile }: ProfileCardProps) {
       : (href ?? (isLecturer ? `/sdm/dosen/${profile.slug}` : undefined))
 
   return (
-    <article className="group flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#C2410C] hover:-translate-y-1 hover:shadow-card-hover">
+    <article className="group flex h-full flex-col justify-between rounded-xl border border-orange-100/90 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#FE8C43] hover:-translate-y-1 hover:shadow-card-hover">
       <div>
         <div className="flex items-start gap-4">
-          <div className="relative flex size-16 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-slate-200 bg-slate-100 font-sans text-base font-bold text-slate-700">
+          <div className="relative flex size-16 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-orange-200/80 bg-orange-50 font-sans text-base font-bold text-slate-700">
             {photo ? (
               <img
                 alt={`Foto ${profile.name}`}
@@ -47,14 +47,14 @@ export function ProfileCard({ href, profile }: ProfileCardProps) {
           </div>
 
           <div className="min-w-0 flex-1">
-            <span className="inline-flex items-center gap-1 rounded bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-600">
-              {isLecturer ? <GraduationCap className="size-3 text-[#C2410C]" /> : <BookOpen className="size-3 text-[#EA580C]" />}
+            <span className="inline-flex items-center gap-1 rounded bg-orange-100/70 px-2 py-0.5 text-[10px] font-bold text-[#EA580C]">
+              {isLecturer ? <GraduationCap className="size-3 text-[#FE8C43]" /> : <BookOpen className="size-3 text-[#EA580C]" />}
               {identifier}
             </span>
-            <h3 className="mt-1.5 font-sans text-base font-bold tracking-tight text-slate-900 transition-colors group-hover:text-[#C2410C]">
+            <h3 className="mt-1.5 font-sans text-base font-bold tracking-tight text-slate-900 transition-colors group-hover:text-[#EA580C]">
               {profile.name}
             </h3>
-            <p className="text-xs font-semibold text-[#C2410C]">
+            <p className="text-xs font-semibold text-[#EA580C]">
               {profile.role}
             </p>
           </div>
@@ -69,7 +69,7 @@ export function ProfileCard({ href, profile }: ProfileCardProps) {
             {expertise.slice(0, 3).map((item) => (
               <span
                 key={item}
-                className="rounded border border-slate-200 bg-slate-50 px-2 py-0.5 text-[10px] font-medium text-slate-600"
+                className="rounded border border-orange-200/60 bg-orange-50/50 px-2 py-0.5 text-[10px] font-medium text-slate-700"
               >
                 {item}
               </span>
@@ -82,7 +82,7 @@ export function ProfileCard({ href, profile }: ProfileCardProps) {
         <span className="text-[11px] text-slate-400">Direktori SDM</span>
         {targetHref ? (
           <a
-            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[#C2410C] hover:text-[#EA580C] transition-colors"
+            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-bold text-[#EA580C] hover:text-[#FE8C43] transition-colors"
             href={targetHref}
           >
             <span>Lihat Profil</span>

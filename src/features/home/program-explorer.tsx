@@ -50,7 +50,7 @@ export function ProgramExplorer() {
           </div>
 
           <a
-            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[#C2410C] hover:text-[#EA580C] transition-colors"
+            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-bold text-[#EA580C] hover:text-[#FE8C43] transition-colors"
             href="/program-studi"
           >
             <span>Lihat Semua 21 Program Studi</span>
@@ -66,10 +66,10 @@ export function ProgramExplorer() {
                 <button
                   key={tab}
                   aria-selected={isActive}
-                  className={`min-h-9 rounded-md px-4 py-1.5 text-xs font-semibold tracking-tight transition-all duration-150 active:scale-[0.98] ${
+                  className={`min-h-9 rounded-md px-4 py-1.5 text-xs font-bold tracking-tight transition-all duration-150 active:scale-[0.98] ${
                     isActive
-                      ? "bg-[#C2410C] text-white shadow-xs"
-                      : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
+                      ? "bg-gradient-to-r from-[#F97316] to-[#FE8C43] text-white shadow-md shadow-orange-500/20"
+                      : "text-slate-700 hover:text-[#EA580C] hover:bg-orange-50/70"
                   }`}
                   onClick={() => setActiveTab(tab)}
                   role="tab"
@@ -90,7 +90,7 @@ export function ProgramExplorer() {
 
         <div className="mt-12 text-center">
           <a
-            className="inline-flex min-h-11 items-center gap-2 rounded-lg border border-orange-200/80 bg-white px-6 py-2.5 text-xs font-semibold text-slate-700 shadow-sm transition-colors hover:bg-orange-50/50 hover:text-slate-900"
+            className="inline-flex min-h-11 items-center gap-2 rounded-lg border border-orange-200 bg-white px-6 py-2.5 text-xs font-bold text-slate-700 shadow-sm transition-colors hover:border-[#FE8C43] hover:bg-orange-50/80 hover:text-[#EA580C]"
             href="/program-studi"
           >
             <span>Lihat Semua 21 Program Studi &amp; Jalur Masuk</span>

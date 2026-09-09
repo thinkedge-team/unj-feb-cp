@@ -68,7 +68,7 @@ export function MobileNavigation({ isOpen, onClose, onOpen }: MobileNavigationPr
           aria-expanded={isOpen}
           aria-haspopup="dialog"
           aria-label="Buka menu"
-          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-800 shadow-2xs hover:bg-slate-50 hover:text-[#C2410C] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C2410C] active:scale-95 transition-all"
+          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg border border-orange-200 bg-white text-slate-800 shadow-2xs hover:bg-orange-50 hover:text-[#EA580C] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FE8C43] active:scale-95 transition-all"
           onClick={onOpen}
           ref={triggerRef}
           type="button"
@@ -86,11 +86,11 @@ export function MobileNavigation({ isOpen, onClose, onOpen }: MobileNavigationPr
             onKeyDown={trapFocus}
             role="dialog"
           >
-            <div className="flex shrink-0 items-center justify-between border-b border-[var(--color-border)] pb-3">
-              <p className="font-semibold text-[var(--color-unj-teal)]">FEB UNJ</p>
+            <div className="flex shrink-0 items-center justify-between border-b border-orange-100 pb-3">
+              <p className="font-bold text-[#EA580C]">FEB UNJ</p>
               <button
                 aria-label="Tutup menu"
-                className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-sm text-[var(--color-unj-teal)] hover:bg-[var(--color-teal-soft)] transition-colors active:scale-95"
+                className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-sm text-[#EA580C] hover:bg-orange-50 transition-colors active:scale-95"
                 onClick={onClose}
                 ref={closeButtonRef}
                 type="button"
@@ -100,16 +100,16 @@ export function MobileNavigation({ isOpen, onClose, onOpen }: MobileNavigationPr
             </div>
             <nav aria-label="Navigasi mobile" className="mt-3 flex-1 min-h-0 overflow-y-auto overscroll-contain pr-1">
               {navigationGroups.map((group) => (
-                <details className="group/details border-b border-[var(--color-border)]" key={group.href}>
-                  <summary className="flex min-h-11 cursor-pointer items-center justify-between px-2 py-2 font-semibold text-[var(--color-ink)] hover:text-[var(--color-unj-teal)] transition-colors list-none [&::-webkit-details-marker]:hidden">
+                <details className="group/details border-b border-orange-100/80" key={group.href}>
+                  <summary className="flex min-h-11 cursor-pointer items-center justify-between px-2 py-2 font-semibold text-[var(--color-ink)] hover:text-[#EA580C] transition-colors list-none [&::-webkit-details-marker]:hidden">
                     <span>{group.title}</span>
-                    <ChevronDown aria-hidden="true" className="size-4 text-slate-400 transition-transform duration-200 group-open/details:rotate-180 group-open/details:text-[var(--color-unj-teal)]" />
+                    <ChevronDown aria-hidden="true" className="size-4 text-slate-400 transition-transform duration-200 group-open/details:rotate-180 group-open/details:text-[#FE8C43]" />
                   </summary>
                   <ul className="pb-2">
                     {group.items.map((item) => (
                       <li key={item.href}>
                         <Link
-                          className="flex min-h-11 items-center px-4 py-2 text-sm text-[var(--color-muted-ink)] hover:bg-[var(--color-teal-soft)] hover:text-[var(--color-teal-deep)] rounded-sm transition-colors"
+                          className="flex min-h-11 items-center px-4 py-2 text-sm text-[var(--color-muted-ink)] hover:bg-orange-50 hover:text-[#EA580C] rounded-sm transition-colors"
                           href={item.href}
                           onClick={onClose}
                         >

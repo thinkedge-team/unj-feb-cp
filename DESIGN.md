@@ -1,20 +1,19 @@
 # FEB UNJ Design System
 
 ## 1. Identity
-FEB UNJ uses an authoritative institutional academic identity reflecting the official faculty color of Universitas Negeri Jakarta: deep academic terracotta and FEB orange (`#C2410C` / `#EA580C`) establish faculty identity and energy, grounded by deep academic navy ink (`#0F172A`) for scholarly rigor, and warm academic ivory parchment (`#FBF9F5`, inspired by `https://feb.unj.ac.id/`) for a dignified reading surface.
+FEB UNJ uses an authentic, radiant institutional academic identity centered around the official faculty color of Universitas Negeri Jakarta: vibrant Light Academic Orange (`#FE8C43`, `#F97316`) establishes proud faculty identity, energy, and warmth, supported by warm Ivory/Parchment (`#FFF9F2`, directly inspired by `#fff9eb` on `https://feb.unj.ac.id/`) and anchored by Deep Academic Slate/Navy (`#0F172A`) for scholarly authority.
 
 ## 2. Tokens
 - **Color:**
-  - Primary Academic Terracotta: `--color-unj-teal` (`#C2410C`, WCAG AA 5.23:1 contrast on white).
-  - Vibrant Faculty Orange Accent: `--color-feb-copper` (`#EA580C`).
-  - Warm Deep Mahogany / Dark Rust: `--color-teal-darkest` (`#7C2D12`).
-  - Deep Burnt Terracotta Hover: `--color-teal-deep` (`#9A3412`).
-  - Warm Ivory / Soft Orange Tint: `--color-teal-soft` (`#FFF7ED`).
-  - Soft Amber Mist: `--color-teal-mist` (`#FFEDD5`).
-  - Warm Academic Ivory / Parchment: `--color-limestone` (`#FBF9F5`).
+  - Official FEB Light Orange: `--color-unj-teal` & `--color-feb-copper` (`#FE8C43`).
+  - Radiant University Orange: `#F97316` (buttons, active pills, gradients).
+  - Deep Academic Terracotta Accent: `--color-teal-deep` (`#EA580C`, contrast-safe text).
+  - Warm Soft Ivory / Peach Tint: `--color-teal-soft` (`#FFF4E6`).
+  - Warm Academic Canvas / Parchment: `--color-limestone` (`#FFF9F2`).
+  - Warm Subtle Border: `--color-border` (`#F6E2D0`).
   - Deep Academic Navy / Ink: `--color-ink` (`#0F172A`).
-  - Academic Gold: `--color-gold` (`#D97706`).
-  - Border & Muted: `--color-border` (`#E2E8F0`), `--color-muted` (`#64748B`), `--color-muted-ink` (`#334155`).
+  - University Gold: `--color-gold` (`#F59E0B`).
+  - Muted: `--color-muted` (`#64748B`), `--color-muted-ink` (`#334155`).
 - **Typography:** Plus Jakarta Sans for both interface and display headings (`--font-display` and `--font-interface`), ensuring sharp legibility across all viewport sizes.
 - **Spacing:** `--space-1` through `--space-12`, using a 4px base rhythm.
 - **Shape:** rounded corners (`rounded-xl` for cards, `rounded-lg` for controls) and institutional surfaces.
