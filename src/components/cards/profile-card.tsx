@@ -29,7 +29,7 @@ export function ProfileCard({ href, profile }: ProfileCardProps) {
       : (href ?? (isLecturer ? `/sdm/dosen/${profile.slug}` : undefined))
 
   return (
-    <article className="group flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#006569] hover:-translate-y-1 hover:shadow-card-hover">
+    <article className="group flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#C2410C] hover:-translate-y-1 hover:shadow-card-hover">
       <div>
         <div className="flex items-start gap-4">
           <div className="relative flex size-16 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-slate-200 bg-slate-100 font-sans text-base font-bold text-slate-700">
@@ -48,13 +48,13 @@ export function ProfileCard({ href, profile }: ProfileCardProps) {
 
           <div className="min-w-0 flex-1">
             <span className="inline-flex items-center gap-1 rounded bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-600">
-              {isLecturer ? <GraduationCap className="size-3 text-[#006569]" /> : <BookOpen className="size-3 text-[#C45F18]" />}
+              {isLecturer ? <GraduationCap className="size-3 text-[#C2410C]" /> : <BookOpen className="size-3 text-[#EA580C]" />}
               {identifier}
             </span>
-            <h3 className="mt-1.5 font-sans text-base font-bold tracking-tight text-slate-900 transition-colors group-hover:text-[#006569]">
+            <h3 className="mt-1.5 font-sans text-base font-bold tracking-tight text-slate-900 transition-colors group-hover:text-[#C2410C]">
               {profile.name}
             </h3>
-            <p className="text-xs font-semibold text-[#006569]">
+            <p className="text-xs font-semibold text-[#C2410C]">
               {profile.role}
             </p>
           </div>
@@ -82,7 +82,7 @@ export function ProfileCard({ href, profile }: ProfileCardProps) {
         <span className="text-[11px] text-slate-400">Direktori SDM</span>
         {targetHref ? (
           <a
-            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[#006569] hover:text-[#C45F18] transition-colors"
+            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[#C2410C] hover:text-[#EA580C] transition-colors"
             href={targetHref}
           >
             <span>Lihat Profil</span>

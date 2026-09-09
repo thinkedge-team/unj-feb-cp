@@ -56,7 +56,7 @@ export function SocialLifeSection() {
 
             <div className="pt-4">
               <a
-                className="group inline-flex min-h-11 items-center gap-3 rounded-full bg-teal-950 px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-white shadow-md transition-all duration-300 hover:bg-teal-900 hover:shadow-lg"
+                className="group inline-flex min-h-11 items-center gap-3 rounded-full bg-[#7C2D12] px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-white shadow-md transition-all duration-300 hover:bg-[#9A3412] hover:shadow-lg"
                 href="/kemahasiswaan/organisasi"
               >
                 <span>Jelajahi Seluruh Lembaga Mahasiswa</span>
@@ -69,7 +69,7 @@ export function SocialLifeSection() {
 
           <div className="space-y-6 lg:col-span-6">
             <div className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
-              <span className="text-[11px] font-semibold uppercase tracking-wider text-[#C45F18]">
+              <span className="text-[11px] font-semibold uppercase tracking-wider text-[#EA580C]">
                 Kanal Resmi Media Sosial
               </span>
               <p className="mt-2 font-sans text-2xl font-bold tracking-tight text-slate-900">
@@ -81,13 +81,13 @@ export function SocialLifeSection() {
 
               <div className="mt-6 space-y-3">
                 <a
-                  className="group flex items-center justify-between rounded-lg border border-slate-200 bg-slate-50 p-4 transition-colors hover:bg-white hover:border-[#006569]"
+                  className="group flex items-center justify-between rounded-lg border border-slate-200 bg-slate-50 p-4 transition-colors hover:bg-white hover:border-[#C2410C]"
                   href="https://instagram.com"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <div className="flex items-center gap-3.5">
-                    <span className="flex size-10 items-center justify-center rounded-lg bg-orange-50 text-[#C45F18]">
+                    <span className="flex size-10 items-center justify-center rounded-lg bg-orange-50 text-[#EA580C]">
                       <Camera aria-hidden="true" className="size-5" />
                     </span>
                     <div>
@@ -95,13 +95,13 @@ export function SocialLifeSection() {
                       <p className="text-xs text-slate-500">@feunjofficial (Warta &amp; Galeri Kampus)</p>
                     </div>
                   </div>
-                  <span className="text-xs font-semibold text-[#006569] group-hover:text-[#C45F18] transition-colors">
+                  <span className="text-xs font-semibold text-[#C2410C] group-hover:text-[#EA580C] transition-colors">
                     Ikuti &rarr;
                   </span>
                 </a>
 
                 <a
-                  className="group flex items-center justify-between rounded-lg border border-slate-200 bg-slate-50 p-4 transition-colors hover:bg-white hover:border-[#006569]"
+                  className="group flex items-center justify-between rounded-lg border border-slate-200 bg-slate-50 p-4 transition-colors hover:bg-white hover:border-[#C2410C]"
                   href="https://youtube.com"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -115,7 +115,7 @@ export function SocialLifeSection() {
                       <p className="text-xs text-slate-500">FEB UNJ Official (Kuliah Umum &amp; Seminar)</p>
                     </div>
                   </div>
-                  <span className="text-xs font-semibold text-[#006569] group-hover:text-[#C45F18] transition-colors">
+                  <span className="text-xs font-semibold text-[#C2410C] group-hover:text-[#EA580C] transition-colors">
                     Langganan &rarr;
                   </span>
                 </a>

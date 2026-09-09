@@ -68,7 +68,7 @@ export function MobileNavigation({ isOpen, onClose, onOpen }: MobileNavigationPr
           aria-expanded={isOpen}
           aria-haspopup="dialog"
           aria-label="Buka menu"
-          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-800 shadow-2xs hover:bg-slate-50 hover:text-[#006569] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#006569] active:scale-95 transition-all"
+          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-800 shadow-2xs hover:bg-slate-50 hover:text-[#C2410C] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C2410C] active:scale-95 transition-all"
           onClick={onOpen}
           ref={triggerRef}
           type="button"

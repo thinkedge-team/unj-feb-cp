@@ -11,22 +11,22 @@ export function EventCard({ event, href }: Readonly<{ readonly event: Event; rea
   const isExternal = targetHref.startsWith("http")
 
   return (
-    <article className="group flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#006569] hover:-translate-y-1 hover:shadow-card-hover">
+    <article className="group flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#C2410C] hover:-translate-y-1 hover:shadow-card-hover">
       <div>
         <div className="flex items-start gap-4">
           <time
-            className="flex size-14 shrink-0 flex-col items-center justify-center rounded-lg bg-slate-100 text-slate-800 border border-slate-200"
+            className="flex size-14 shrink-0 flex-col items-center justify-center rounded-lg bg-orange-50 text-slate-800 border border-orange-200/60"
             dateTime={event.startsAt}
           >
-            <span className="font-sans text-xl font-bold leading-none text-[#006569]">{day}</span>
-            <span className="mt-0.5 text-[10px] font-bold uppercase tracking-wider text-slate-500">{month}</span>
+            <span className="font-sans text-xl font-bold leading-none text-[#C2410C]">{day}</span>
+            <span className="mt-0.5 text-[10px] font-bold uppercase tracking-wider text-[#EA580C]">{month}</span>
           </time>
 
           <div className="min-w-0 flex-1">
             <span className="inline-flex rounded bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-600">
               {event.category}
             </span>
-            <h3 className="mt-1.5 font-sans text-base font-bold tracking-tight text-slate-900 leading-snug transition-colors group-hover:text-[#006569]">
+            <h3 className="mt-1.5 font-sans text-base font-bold tracking-tight text-slate-900 leading-snug transition-colors group-hover:text-[#C2410C]">
               {event.title}
             </h3>
           </div>
@@ -47,7 +47,7 @@ export function EventCard({ event, href }: Readonly<{ readonly event: Event; rea
       <div className="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between">
         <span className="text-[11px] text-slate-400">Agenda Fakultas</span>
         <a
-          className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[#006569] hover:text-[#C45F18] transition-colors"
+          className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[#C2410C] hover:text-[#EA580C] transition-colors"
           href={targetHref}
           rel={isExternal ? "noopener noreferrer" : undefined}
           target={isExternal ? "_blank" : undefined}

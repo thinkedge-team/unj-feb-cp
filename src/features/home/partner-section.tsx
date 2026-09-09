@@ -11,7 +11,7 @@ export function PartnerSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-between gap-4 border-b border-slate-200 pb-8 md:flex-row md:items-end">
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-[#C45F18]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#EA580C]">
               Ekosistem Kolaboratif
             </span>
             <h2
@@ -22,7 +22,7 @@ export function PartnerSection() {
             </h2>
           </div>
           <a
-            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[#006569] hover:text-[#C45F18] transition-colors"
+            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[#C2410C] hover:text-[#EA580C] transition-colors"
             href="/kerjasama"
           >
             <span>Kemitraan &amp; Industri</span>
@@ -34,15 +34,15 @@ export function PartnerSection() {
           {partners.map((partner) => (
             <div
               key={partner.slug}
-              className="group flex min-h-28 flex-col items-center justify-center rounded-2xl border border-slate-200/80 bg-white p-4 text-center shadow-sm transition-all duration-300 hover:border-teal-600/40 hover:shadow-md hover:-translate-y-0.5"
+              className="group flex min-h-28 flex-col items-center justify-center rounded-2xl border border-slate-200/80 bg-white p-4 text-center shadow-sm transition-all duration-300 hover:border-orange-500/50 hover:shadow-md hover:-translate-y-0.5"
             >
-              <span className="flex size-10 items-center justify-center rounded-xl bg-slate-50 text-slate-400 group-hover:bg-teal-50 group-hover:text-teal-900 transition-colors">
+              <span className="flex size-10 items-center justify-center rounded-xl bg-slate-50 text-slate-400 group-hover:bg-orange-50 group-hover:text-orange-900 transition-colors">
                 <Building2 aria-hidden="true" className="size-5" strokeWidth={1.75} />
               </span>
-              <span className="mt-2.5 text-xs font-bold text-slate-800 line-clamp-2 leading-tight group-hover:text-teal-950 transition-colors">
+              <span className="mt-2.5 text-xs font-bold text-slate-800 line-clamp-2 leading-tight group-hover:text-orange-950 transition-colors">
                 {partner.name}
               </span>
-              <span className="mt-1 text-[10px] font-semibold uppercase tracking-wider text-copper">
+              <span className="mt-1 text-[10px] font-semibold uppercase tracking-wider text-orange-600">
                 {partner.category}
               </span>
             </div>

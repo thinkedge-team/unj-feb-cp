@@ -50,11 +50,11 @@ export function FacultySpotlight() {
 
         <div className="mt-12 text-center">
           <a
-            className="group inline-flex min-h-11 items-center gap-3 rounded-full border border-slate-300/80 bg-slate-50 px-8 py-3 text-xs font-bold uppercase tracking-wider text-slate-800 shadow-sm transition-all duration-300 hover:border-teal-700/50 hover:bg-white hover:text-teal-950 hover:shadow"
+            className="group inline-flex min-h-11 items-center gap-3 rounded-full border border-slate-300/80 bg-slate-50 px-8 py-3 text-xs font-bold uppercase tracking-wider text-slate-800 shadow-sm transition-all duration-300 hover:border-orange-600/50 hover:bg-white hover:text-orange-950 hover:shadow"
             href="/sdm/dosen"
           >
             <span>Jelajahi Seluruh 120+ Profil Tenaga Pendidik</span>
-            <span className="flex size-6 items-center justify-center rounded-full bg-slate-200/80 text-slate-700 transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-teal-900 group-hover:text-white">
+            <span className="flex size-6 items-center justify-center rounded-full bg-slate-200/80 text-slate-700 transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-[#C2410C] group-hover:text-white">
               <ArrowRight aria-hidden="true" className="size-3" />
             </span>
           </a>

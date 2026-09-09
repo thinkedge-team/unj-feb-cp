@@ -4,7 +4,7 @@ export function AspirationCTA() {
   return (
     <section
       aria-labelledby="aspiration-cta-heading"
-      className="border-b border-slate-200 bg-[#01383A] py-16 text-white md:py-20"
+      className="border-b border-orange-950/20 bg-gradient-to-r from-[#7C2D12] to-[#9A3412] py-16 text-white md:py-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
@@ -18,7 +18,7 @@ export function AspirationCTA() {
             >
               Mulai Perjalanan Akademik Anda di FEB UNJ
             </h2>
-            <p className="max-w-2xl text-sm leading-relaxed text-teal-100/90 sm:text-base">
+            <p className="max-w-2xl text-sm leading-relaxed text-orange-100/90 sm:text-base">
               Bergabunglah dengan komunitas intelektual yang menjunjung tinggi kebenaran ilmiah,
               etika profesional, dan komitmen memajukan kesejahteraan masyarakat melalui pendidikan unggul.
             </p>
@@ -26,7 +26,7 @@ export function AspirationCTA() {
 
           <div className="flex flex-col gap-3 sm:flex-row lg:col-span-4 lg:flex-col lg:items-end">
             <a
-              className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-[#C45F18] px-6 py-2.5 text-center text-sm font-semibold text-white transition-colors hover:bg-[#80350B] sm:w-auto"
+              className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-[#EA580C] px-6 py-2.5 text-center text-sm font-semibold text-white transition-colors hover:bg-[#C2410C] sm:w-auto shadow-md"
               href="/program-studi"
             >
               <span>Penerimaan Mahasiswa Baru</span>

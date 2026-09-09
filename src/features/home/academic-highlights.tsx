@@ -24,14 +24,14 @@ export function AcademicHighlights() {
               fasilitas riset mutakhir bagi dosen dan mahasiswa.
             </p>
 
-            <div className="border-l-2 border-[#006569] bg-slate-50 p-4 rounded-r-lg text-xs italic leading-relaxed text-slate-700">
+            <div className="border-l-2 border-[#C2410C] bg-slate-50 p-4 rounded-r-lg text-xs italic leading-relaxed text-slate-700">
               &ldquo;Transformasi akademik diarahkan untuk menghasilkan riset berdampak tinggi dan
               lulusan berdaya saing pada panggung ekonomi regional Asia Tenggara.&rdquo;
             </div>
 
             <div className="pt-2">
               <a
-                className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-[#006569] px-5 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-[#004e51]"
+                className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-[#C2410C] px-5 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-[#9A3412]"
                 href="/internasional"
               >
                 <span>Program Internasional &amp; Kolaborasi</span>
@@ -41,9 +41,9 @@ export function AcademicHighlights() {
           </div>
 
           <div className="space-y-6 lg:col-span-7">
-            <div className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm transition-all duration-300 ease-out hover:border-[#006569]/60 hover:shadow-card-hover hover:-translate-y-0.5">
+            <div className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm transition-all duration-300 ease-out hover:border-[#C2410C]/60 hover:shadow-card-hover hover:-translate-y-0.5">
               <div className="flex items-center gap-3.5">
-                <span className="flex size-10 items-center justify-center rounded-lg bg-slate-100 text-[#006569]">
+                <span className="flex size-10 items-center justify-center rounded-lg bg-orange-50 text-[#C2410C]">
                   <Globe2 aria-hidden="true" className="size-5" />
                 </span>
                 <div>
@@ -73,13 +73,13 @@ export function AcademicHighlights() {
               </div>
             </div>
 
-            <div className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm transition-all duration-300 ease-out hover:border-[#006569]/60 hover:shadow-card-hover hover:-translate-y-0.5">
+            <div className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm transition-all duration-300 ease-out hover:border-[#C2410C]/60 hover:shadow-card-hover hover:-translate-y-0.5">
               <div className="flex items-center gap-3.5">
-                <span className="flex size-10 items-center justify-center rounded-lg bg-slate-100 text-[#006569]">
+                <span className="flex size-10 items-center justify-center rounded-lg bg-orange-50 text-[#C2410C]">
                   <Compass aria-hidden="true" className="size-5" />
                 </span>
                 <div>
-                  <span className="text-[11px] font-semibold uppercase tracking-wider text-[#C45F18]">
+                  <span className="text-[11px] font-semibold uppercase tracking-wider text-[#EA580C]">
                     Infrastruktur Riset
                   </span>
                   <h3 className="font-sans text-lg font-bold tracking-tight text-slate-900">
@@ -93,7 +93,7 @@ export function AcademicHighlights() {
               </p>
               <div className="mt-4 flex items-center gap-6 border-t border-slate-100 pt-3.5">
                 <a
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#006569] hover:text-[#C45F18] transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#C2410C] hover:text-[#EA580C] transition-colors"
                   href="/profil/fasilitas"
                 >
                   <span>Lihat Fasilitas Kampus</span>
@@ -109,13 +109,13 @@ export function AcademicHighlights() {
               </div>
             </div>
 
-            <div className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm transition-all duration-300 ease-out hover:border-[#006569]/60 hover:shadow-card-hover hover:-translate-y-0.5">
+            <div className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm transition-all duration-300 ease-out hover:border-[#C2410C]/60 hover:shadow-card-hover hover:-translate-y-0.5">
               <div className="flex items-center gap-3.5">
-                <span className="flex size-10 items-center justify-center rounded-lg bg-slate-100 text-[#006569]">
+                <span className="flex size-10 items-center justify-center rounded-lg bg-orange-50 text-[#C2410C]">
                   <Award aria-hidden="true" className="size-5" />
                 </span>
                 <div>
-                  <span className="text-[11px] font-semibold uppercase tracking-wider text-[#C45F18]">
+                  <span className="text-[11px] font-semibold uppercase tracking-wider text-[#EA580C]">
                     Reputasi &amp; Dampak
                   </span>
                   <h3 className="font-sans text-lg font-bold tracking-tight text-slate-900">
@@ -129,7 +129,7 @@ export function AcademicHighlights() {
               </p>
               <div className="mt-4 border-t border-slate-100 pt-3.5">
                 <a
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#C45F18] hover:underline transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#EA580C] hover:underline transition-colors"
                   href="/profil/prestasi"
                 >
                   <span>Daftar Rekam Jejak Prestasi</span>

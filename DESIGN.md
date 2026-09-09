@@ -1,14 +1,24 @@
 # FEB UNJ Design System
 
 ## 1. Identity
-FEB UNJ uses a warm institutional academic identity: deep UNJ teal establishes authority, copper signals faculty distinction, and limestone creates a calm reading surface. The frame is functional and dignified rather than ornamental.
+FEB UNJ uses an authoritative institutional academic identity reflecting the official faculty color of Universitas Negeri Jakarta: deep academic terracotta and FEB orange (`#C2410C` / `#EA580C`) establish faculty identity and energy, grounded by deep academic navy ink (`#0F172A`) for scholarly rigor, and warm academic ivory parchment (`#FBF9F5`, inspired by `https://feb.unj.ac.id/`) for a dignified reading surface.
 
 ## 2. Tokens
-- **Color:** `--color-unj-teal`, `--color-teal-deep`, `--color-teal-soft`, `--color-teal-mist`, `--color-feb-copper`, `--color-copper-deep`, `--color-limestone`, `--color-white`, `--color-ink`, `--color-muted`, `--color-muted-ink`, `--color-border`, `--color-skeleton`.
-- **Typography:** Merriweather for headings through `--font-display`; Plus Jakarta Sans for interface text through `--font-interface`.
+- **Color:**
+  - Primary Academic Terracotta: `--color-unj-teal` (`#C2410C`, WCAG AA 5.23:1 contrast on white).
+  - Vibrant Faculty Orange Accent: `--color-feb-copper` (`#EA580C`).
+  - Warm Deep Mahogany / Dark Rust: `--color-teal-darkest` (`#7C2D12`).
+  - Deep Burnt Terracotta Hover: `--color-teal-deep` (`#9A3412`).
+  - Warm Ivory / Soft Orange Tint: `--color-teal-soft` (`#FFF7ED`).
+  - Soft Amber Mist: `--color-teal-mist` (`#FFEDD5`).
+  - Warm Academic Ivory / Parchment: `--color-limestone` (`#FBF9F5`).
+  - Deep Academic Navy / Ink: `--color-ink` (`#0F172A`).
+  - Academic Gold: `--color-gold` (`#D97706`).
+  - Border & Muted: `--color-border` (`#E2E8F0`), `--color-muted` (`#64748B`), `--color-muted-ink` (`#334155`).
+- **Typography:** Plus Jakarta Sans for both interface and display headings (`--font-display` and `--font-interface`), ensuring sharp legibility across all viewport sizes.
 - **Spacing:** `--space-1` through `--space-12`, using a 4px base rhythm.
-- **Shape:** compact `rounded-sm` controls and institutional surfaces.
-- **Motion:** `transition-colors duration-200` for direct interaction feedback. Global reduced-motion rules remove nonessential transitions and animations.
+- **Shape:** rounded corners (`rounded-xl` for cards, `rounded-lg` for controls) and institutional surfaces.
+- **Motion:** GPU-composited transitions (`transform`, `opacity`), natural deceleration easing (`cubic-bezier(0.16, 1, 0.3, 1)`), and full support for `prefers-reduced-motion`.
 
 ## 3. Layout
 - Use a centered `max-w-7xl` content container with responsive horizontal padding.

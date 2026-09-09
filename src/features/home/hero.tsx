@@ -11,10 +11,10 @@ export function Hero() {
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
           <div className="space-y-6 lg:col-span-7">
             <div className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-2xs">
-              <span className="text-[#C45F18] font-bold">FEB UNJ</span>
+              <span className="text-[#C2410C] font-bold">FEB UNJ</span>
               <span className="text-slate-300">|</span>
               <span className="inline-flex items-center gap-1 text-slate-600">
-                <ShieldCheck className="size-3.5 text-[#006569]" />
+                <ShieldCheck className="size-3.5 text-[#C2410C]" />
                 Akreditasi Unggul BAN-PT
               </span>
             </div>
@@ -34,7 +34,7 @@ export function Hero() {
 
             <div className="flex flex-wrap items-center gap-3 pt-1">
               <a
-                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-[#006569] px-6 py-2.5 text-sm font-semibold text-white shadow-xs transition-all duration-200 hover:bg-[#004e51] hover:shadow-md active:scale-[0.98]"
+                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-[#C2410C] px-6 py-2.5 text-sm font-semibold text-white shadow-xs transition-all duration-200 hover:bg-[#9A3412] hover:shadow-md active:scale-[0.98]"
                 href="/program-studi"
               >
                 <span>Jelajahi Program Studi</span>
@@ -51,7 +51,7 @@ export function Hero() {
 
             <form
               action="/informasi"
-              className="mt-4 flex max-w-md items-center rounded-lg border border-slate-200 bg-slate-50/70 p-1 transition-all duration-200 focus-within:border-[#006569] focus-within:bg-white focus-within:ring-2 focus-within:ring-[#006569]/20 shadow-2xs"
+              className="mt-4 flex max-w-md items-center rounded-lg border border-slate-200 bg-slate-50/70 p-1 transition-all duration-200 focus-within:border-[#C2410C] focus-within:bg-white focus-within:ring-2 focus-within:ring-[#C2410C]/20 shadow-2xs"
               method="get"
               role="search"
             >
@@ -67,7 +67,7 @@ export function Hero() {
                 type="search"
               />
               <button
-                className="inline-flex min-h-8 items-center justify-center rounded-md bg-[#006569] px-4 text-xs font-semibold text-white transition-all duration-150 hover:bg-[#004e51] active:scale-[0.97]"
+                className="inline-flex min-h-8 items-center justify-center rounded-md bg-[#C2410C] px-4 text-xs font-semibold text-white transition-all duration-150 hover:bg-[#9A3412] active:scale-[0.97]"
                 type="submit"
               >
                 Cari

@@ -20,7 +20,7 @@ export function DeanWelcome() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <span className="inline-flex items-center gap-1 rounded bg-[#006569] px-2.5 py-0.5 text-[11px] font-semibold text-white">
+                  <span className="inline-flex items-center gap-1 rounded bg-[#C2410C] px-2.5 py-0.5 text-[11px] font-semibold text-white">
                     <Award className="size-3" />
                     Dekan FEB UNJ
                   </span>
@@ -62,7 +62,7 @@ export function DeanWelcome() {
 
           <div className="space-y-6 lg:col-span-7">
             <div className="inline-flex items-center gap-1.5 rounded-md bg-amber-50 border border-amber-200 px-3 py-1 text-xs font-semibold text-amber-800">
-              <Quote aria-hidden="true" className="size-3.5 text-[#C45F18]" />
+              <Quote aria-hidden="true" className="size-3.5 text-[#EA580C]" />
               <span>Sambutan Dekan</span>
             </div>
 
@@ -74,7 +74,7 @@ export function DeanWelcome() {
             </h2>
 
             <div className="space-y-4 text-base leading-relaxed text-slate-600">
-              <p className="text-lg font-medium text-slate-900 border-l-4 border-[#006569] pl-4 py-1">
+              <p className="text-lg font-medium text-slate-900 border-l-4 border-[#C2410C] pl-4 py-1">
                 &ldquo;Pendidikan tinggi ekonomi tidak semata-mata mencetak lulusan yang piawai dalam hitungan angka, melainkan membentuk insan berkarakter yang mampu menggerakkan keadilan sosial dan keberlanjutan bangsa.&rdquo;
               </p>
               <p>
@@ -93,7 +93,7 @@ export function DeanWelcome() {
 
             <div className="flex flex-wrap items-center gap-4 border-t border-slate-200 pt-6">
               <a
-                className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-[#006569] px-5 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-[#004e51]"
+                className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-[#C2410C] px-5 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-[#9A3412]"
                 href="/profil/tentang-feb"
               >
                 <span>Visi &amp; Misi Fakultas</span>

@@ -16,7 +16,7 @@ export function Footer() {
               <h2 className="font-sans text-base font-bold text-white tracking-tight" id="footer-identity">
                 {siteConfig.shortName}
               </h2>
-              <p className="text-xs text-teal-400 font-medium">Universitas Negeri Jakarta</p>
+              <p className="text-xs text-orange-400 font-medium">Universitas Negeri Jakarta</p>
             </div>
           </div>
 
@@ -39,7 +39,7 @@ export function Footer() {
 
           <div>
             <a
-              className="inline-flex min-h-11 items-center gap-2 text-xs font-semibold text-teal-400 hover:text-teal-300 transition-colors"
+              className="inline-flex min-h-11 items-center gap-2 text-xs font-semibold text-orange-400 hover:text-orange-300 transition-colors"
               href={siteConfig.contact.mapUrl}
               rel="noopener noreferrer"
               target="_blank"
@@ -76,7 +76,7 @@ export function Footer() {
 
           <div className="rounded-lg border border-slate-700 bg-slate-800/60 p-4">
             <div className="flex items-start gap-3">
-              <span className="flex size-7 shrink-0 items-center justify-center rounded bg-[#006569] text-white">
+              <span className="flex size-7 shrink-0 items-center justify-center rounded bg-[#C2410C] text-white">
                 <ShieldCheck className="size-4" />
               </span>
               <div>

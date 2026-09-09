@@ -53,7 +53,7 @@ export function AchievementSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-between gap-4 border-b border-slate-200 pb-8 md:flex-row md:items-end">
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-[#C45F18]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#EA580C]">
               Rekam Jejak Keunggulan
             </span>
             <h2
@@ -64,7 +64,7 @@ export function AchievementSection() {
             </h2>
           </div>
           <a
-            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[#006569] hover:text-[#C45F18] transition-colors"
+            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[#C2410C] hover:text-[#EA580C] transition-colors"
             href="/profil/prestasi"
           >
             <span>Arsip Lengkap Prestasi</span>
@@ -76,7 +76,7 @@ export function AchievementSection() {
           {achievements.map((item) => (
             <div
               key={item.title}
-              className="group flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#006569] hover:-translate-y-1 hover:shadow-card-hover"
+              className="group flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#C2410C] hover:-translate-y-1 hover:shadow-card-hover"
             >
               <div>
                 <div className="flex items-center justify-between">
@@ -89,11 +89,11 @@ export function AchievementSection() {
                   </span>
                 </div>
 
-                <h3 className="mt-4 font-sans text-lg font-bold tracking-tight text-slate-900 leading-snug transition-colors group-hover:text-[#006569]">
+                <h3 className="mt-4 font-sans text-lg font-bold tracking-tight text-slate-900 leading-snug transition-colors group-hover:text-[#C2410C]">
                   {item.title}
                 </h3>
 
-                <p className="mt-1.5 text-xs font-semibold text-[#006569]">
+                <p className="mt-1.5 text-xs font-semibold text-[#C2410C]">
                   {item.recipient}
                 </p>
 
@@ -104,7 +104,7 @@ export function AchievementSection() {
 
               <div className="mt-5 flex items-center justify-between border-t border-slate-100 pt-3.5 text-xs">
                 <span className="text-slate-400 font-medium">{item.category}</span>
-                <span className="flex items-center gap-1 font-semibold text-[#C45F18]">
+                <span className="flex items-center gap-1 font-semibold text-[#EA580C]">
                   <Medal aria-hidden="true" className="size-3.5" />
                   Capaian Terpilih
                 </span>
@@ -119,7 +119,7 @@ export function AchievementSection() {
             FEB UNJ mendukung pendanaan dan pembimbingan intensif bagi setiap mahasiswa yang berkompetisi.
           </p>
           <a
-            className="mt-4 inline-flex min-h-11 items-center gap-2 text-xs font-bold uppercase tracking-wider text-teal-900 sm:mt-0 hover:text-copper transition-colors"
+            className="mt-4 inline-flex min-h-11 items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C2410C] sm:mt-0 hover:text-[#EA580C] transition-colors"
             href="/kemahasiswaan/prestasi"
           >
             <span>Prestasi Kemahasiswaan</span>

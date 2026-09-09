@@ -3,22 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --color-unj-teal: #006569;
-  --color-feb-copper: #C45F18;
-  --color-limestone: #FBFBFA;
+  --color-unj-teal: #C2410C;
+  --color-feb-copper: #EA580C;
+  --color-limestone: #FBF9F5;
   --color-white: #FFFFFF;
   --color-ink: #0F172A;
-  --color-teal-deep: #01383A;
-  --color-teal-darkest: #012224;
-  --color-teal-soft: #EAF5F5;
-  --color-copper-deep: #80350B;
-  --color-copper-light: #FDF8F3;
-  --color-teal-mist: #D3EBEB;
+  --color-teal-deep: #9A3412;
+  --color-teal-darkest: #7C2D12;
+  --color-teal-soft: #FFF7ED;
+  --color-copper-deep: #9A3412;
+  --color-copper-light: #FFFBEB;
+  --color-teal-mist: #FFEDD5;
   --color-border: #E2E8F0;
   --color-muted: #64748B;
   --color-muted-ink: #334155;
   --color-skeleton: #E2E8F0;
-  --color-gold: #D49B28;
+  --color-gold: #D97706;
   --font-display: var(--font-plus-jakarta);
   --font-interface: var(--font-plus-jakarta);
   --space-1: 0.25rem;

@@ -36,7 +36,7 @@ export function MegaMenu({ activeGroup, isOpen, onClose }: MegaMenuProps) {
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[240px_1fr]">
           <div className="border-b border-slate-100 pb-4 lg:border-b-0 lg:border-r lg:pr-6 lg:pb-0">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-[#C45F18]">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-[#EA580C]">
               Navigasi
             </span>
             <h2 className="mt-1 font-sans text-xl font-bold tracking-tight text-slate-900">
@@ -47,7 +47,7 @@ export function MegaMenu({ activeGroup, isOpen, onClose }: MegaMenuProps) {
             </p>
             <div className="mt-4">
               <Link
-                className="inline-flex min-h-9 items-center gap-1.5 text-xs font-semibold text-[#006569] hover:text-[#004e51] transition-colors"
+                className="inline-flex min-h-9 items-center gap-1.5 text-xs font-semibold text-[#C2410C] hover:text-[#9A3412] transition-colors"
                 href={activeGroup.href}
                 onClick={onClose}
               >
@@ -67,8 +67,8 @@ export function MegaMenu({ activeGroup, isOpen, onClose }: MegaMenuProps) {
                     href={item.href}
                     onClick={onClose}
                   >
-                    <span className="flex items-center gap-1.5 text-xs font-semibold text-slate-800 group-hover:text-[#006569]">
-                      <ChevronRight className="size-3 text-slate-400 group-hover:text-[#006569] transition-transform group-hover:translate-x-0.5" />
+                    <span className="flex items-center gap-1.5 text-xs font-semibold text-slate-800 group-hover:text-[#C2410C]">
+                      <ChevronRight className="size-3 text-slate-400 group-hover:text-[#C2410C] transition-transform group-hover:translate-x-0.5" />
                       {item.title}
                     </span>
                     {item.description ? (

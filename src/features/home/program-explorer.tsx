@@ -34,7 +34,7 @@ export function ProgramExplorer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-between gap-4 border-b border-slate-200 pb-8 md:flex-row md:items-end">
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-[#C45F18]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#EA580C]">
               Pilihan Pendidikan Tinggi
             </span>
             <h2
@@ -50,7 +50,7 @@ export function ProgramExplorer() {
           </div>
 
           <a
-            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[#006569] hover:text-[#C45F18] transition-colors"
+            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[#C2410C] hover:text-[#EA580C] transition-colors"
             href="/program-studi"
           >
             <span>Lihat Semua 21 Program Studi</span>
@@ -68,7 +68,7 @@ export function ProgramExplorer() {
                   aria-selected={isActive}
                   className={`min-h-9 rounded-md px-4 py-1.5 text-xs font-semibold tracking-tight transition-all duration-150 active:scale-[0.98] ${
                     isActive
-                      ? "bg-[#006569] text-white shadow-xs"
+                      ? "bg-[#C2410C] text-white shadow-xs"
                       : "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
                   }`}
                   onClick={() => setActiveTab(tab)}

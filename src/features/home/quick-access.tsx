@@ -48,7 +48,7 @@ export function QuickAccess() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-start justify-between gap-4 border-b border-slate-200 pb-8 md:flex-row md:items-end">
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-[#C45F18]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#EA580C]">
               Gerbang Informasi Cepat
             </span>
             <h2 id="quick-access-heading" className="mt-2 font-sans text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
@@ -66,24 +66,24 @@ export function QuickAccess() {
             return (
               <a
                 key={item.title}
-                className="group flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#006569] hover:-translate-y-1 hover:shadow-card-hover"
+                className="group flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#C2410C] hover:-translate-y-1 hover:shadow-card-hover"
                 href={item.href}
               >
                 <div>
                   <div className="flex items-center justify-between">
-                    <span className="flex size-10 items-center justify-center rounded-lg bg-slate-100 text-[#006569] transition-colors group-hover:bg-[#006569] group-hover:text-white">
+                    <span className="flex size-10 items-center justify-center rounded-lg bg-orange-50 text-[#C2410C] transition-colors group-hover:bg-[#C2410C] group-hover:text-white">
                       <Icon aria-hidden="true" className="size-5" />
                     </span>
                     <ArrowUpRight
                       aria-hidden="true"
-                      className="size-4 text-slate-400 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-[#006569]"
+                      className="size-4 text-slate-400 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-[#C2410C]"
                     />
                   </div>
 
-                  <h3 className="mt-5 font-sans text-base font-bold tracking-tight text-slate-900 transition-colors group-hover:text-[#006569]">
+                  <h3 className="mt-5 font-sans text-base font-bold tracking-tight text-slate-900 transition-colors group-hover:text-[#C2410C]">
                     {item.title}
                   </h3>
-                  <p className="mt-1 text-xs font-semibold text-[#C45F18]">
+                  <p className="mt-1 text-xs font-semibold text-[#EA580C]">
                     {item.subtitle}
                   </p>
                   <p className="mt-2 text-xs leading-relaxed text-slate-600">
@@ -91,7 +91,7 @@ export function QuickAccess() {
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-[#006569] group-hover:text-[#C45F18] transition-colors">
+                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-[#C2410C] group-hover:text-[#EA580C] transition-colors">
                   <span>Buka Halaman</span>
                   <span>&rarr;</span>
                 </div>
