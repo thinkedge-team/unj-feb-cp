@@ -66,12 +66,18 @@ export function QuickAccess() {
             return (
               <a
                 key={item.title}
-                className="group flex flex-col justify-between rounded-xl border border-orange-100/90 bg-[#FFFDFB] p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#FE8C43] hover:-translate-y-1 hover:shadow-card-hover"
+                className="group relative overflow-hidden flex flex-col justify-between rounded-xl border border-orange-200/80 border-t-4 border-t-[#FE8C43] bg-gradient-to-b from-white via-white to-orange-50/30 p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#FE8C43] hover:-translate-y-1 hover:shadow-card-hover"
                 href={item.href}
               >
-                <div>
+                {/* Subtle Background Watermark Icon */}
+                <Icon
+                  aria-hidden="true"
+                  className="absolute -bottom-4 -right-4 size-28 text-orange-400/[0.08] transition-all duration-500 group-hover:text-[#FE8C43]/[0.16] group-hover:scale-110 pointer-events-none"
+                />
+
+                <div className="relative">
                   <div className="flex items-center justify-between">
-                    <span className="flex size-10 items-center justify-center rounded-lg bg-orange-100/80 text-[#EA580C] transition-colors group-hover:bg-[#FE8C43] group-hover:text-white shadow-2xs">
+                    <span className="flex size-11 items-center justify-center rounded-xl bg-gradient-to-br from-orange-100 to-orange-50 text-[#EA580C] transition-all duration-300 group-hover:from-[#F97316] group-hover:to-[#FE8C43] group-hover:text-white shadow-xs">
                       <Icon aria-hidden="true" className="size-5" />
                     </span>
                     <ArrowUpRight
@@ -91,9 +97,9 @@ export function QuickAccess() {
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#EA580C] group-hover:text-[#FE8C43] transition-colors">
+                <div className="relative mt-6 pt-4 border-t border-orange-100 flex items-center justify-between text-xs font-bold text-[#EA580C] group-hover:text-[#FE8C43] transition-colors">
                   <span>Buka Halaman</span>
-                  <span>&rarr;</span>
+                  <span className="transition-transform group-hover:translate-x-1">&rarr;</span>
                 </div>
               </a>
             )

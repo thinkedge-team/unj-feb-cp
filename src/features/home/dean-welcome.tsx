@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { ArrowRight, Award, Quote } from "lucide-react"
 
 export function DeanWelcome() {
@@ -7,7 +8,18 @@ export function DeanWelcome() {
       className="relative overflow-hidden border-b border-[#F0E4D8] bg-[#FFF9F2] py-16 md:py-24"
     >
       <div className="absolute inset-0 bg-academic-dots opacity-50 pointer-events-none [mask-image:radial-gradient(ellipse_70%_70%_at_50%_50%,#000_50%,transparent_100%)]" />
-      <div className="absolute top-1/2 -right-24 -z-10 h-96 w-96 -translate-y-1/2 rounded-full bg-orange-300/15 blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 -right-24 -z-10 h-96 w-96 -translate-y-1/2 rounded-full bg-orange-300/20 blur-3xl pointer-events-none" />
+
+      {/* Authentic University Emblem Background Watermark */}
+      <div className="absolute -right-20 top-1/2 -translate-y-1/2 opacity-[0.04] pointer-events-none select-none hidden md:block">
+        <Image
+          alt="Watermark Lambang FEB UNJ"
+          className="size-[580px] object-contain"
+          height={580}
+          src="/images/logo/feb-logo.png"
+          width={580}
+        />
+      </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">

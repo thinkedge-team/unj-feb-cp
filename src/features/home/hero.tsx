@@ -9,8 +9,20 @@ export function Hero() {
     >
       {/* Background Academic Grid & Ambient Light Orbs */}
       <div className="absolute inset-0 bg-academic-grid opacity-75 pointer-events-none [mask-image:radial-gradient(ellipse_80%_65%_at_50%_35%,#000_60%,transparent_100%)]" />
+      <div className="absolute inset-0 bg-diagonal-accent pointer-events-none" />
       <div className="absolute -top-32 -right-32 -z-10 h-[600px] w-[600px] rounded-full bg-gradient-to-br from-orange-300/25 via-amber-200/15 to-transparent blur-3xl pointer-events-none" />
       <div className="absolute -bottom-32 -left-32 -z-10 h-[500px] w-[500px] rounded-full bg-gradient-to-tr from-orange-400/20 via-orange-200/10 to-transparent blur-3xl pointer-events-none" />
+
+      {/* University Emblem Watermark */}
+      <div className="absolute -left-20 top-1/2 -translate-y-1/2 opacity-[0.035] pointer-events-none select-none hidden lg:block">
+        <Image
+          alt="Watermark Lambang UNJ"
+          className="size-[540px] object-contain"
+          height={540}
+          src="/images/logo/unj-logo.png"
+          width={540}
+        />
+      </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">

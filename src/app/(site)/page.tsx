@@ -1,8 +1,10 @@
 import type { Metadata } from "next"
 
 import { AcademicHighlights } from "@/features/home/academic-highlights"
+import { AccreditationRibbon } from "@/features/home/accreditation-ribbon"
 import { AchievementSection } from "@/features/home/achievement-section"
 import { AspirationCTA } from "@/features/home/aspiration-cta"
+import { CampusFacilities } from "@/features/home/campus-facilities"
 import { DeanWelcome } from "@/features/home/dean-welcome"
 import { EventsSection } from "@/features/home/events-section"
 import { FacultySpotlight } from "@/features/home/faculty-spotlight"
@@ -26,11 +28,13 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <AccreditationRibbon />
       <QuickAccess />
       <DeanWelcome />
       <FacultyStatistics />
       <ProgramExplorer />
       <AcademicHighlights />
+      <CampusFacilities />
       <NewsSection />
       <EventsSection />
       <AchievementSection />
