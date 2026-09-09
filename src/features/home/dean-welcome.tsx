@@ -9,13 +9,13 @@ export function DeanWelcome() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-5">
-            <div className="group overflow-hidden rounded-2xl border border-orange-100/90 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:shadow-card-hover hover:border-[#C2410C]/50">
+            <div className="group overflow-hidden rounded-2xl border border-orange-100/90 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:shadow-card-hover hover:border-[#FE8C43]">
               <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-slate-100">
                 <img
                   alt="Potret Dekan Fakultas Ekonomi dan Bisnis Universitas Negeri Jakarta"
                   className="size-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
                   height="450"
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
+                  src="/images/lecturers/dekan.jpg"
                   width="360"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />

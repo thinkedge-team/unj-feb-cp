@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { ArrowRight, Download, Search, ShieldCheck } from "lucide-react"
+import { ArrowRight, Award, Download, Search, ShieldCheck } from "lucide-react"
 
 export function Hero() {
   return (
@@ -75,18 +75,24 @@ export function Hero() {
             </form>
           </div>
 
-          <div className="lg:col-span-5">
-            <div className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:border-slate-300">
+          <div className="lg:col-span-5 relative">
+            <div className="group overflow-hidden rounded-2xl border-2 border-orange-200/80 bg-white shadow-xl shadow-orange-500/10 transition-all duration-300 hover:shadow-2xl hover:border-[#FE8C43]">
               <div className="relative aspect-[4/3] w-full overflow-hidden sm:aspect-[16/11]">
                 <Image
                   alt="Kampus Fakultas Ekonomi dan Bisnis Universitas Negeri Jakarta"
                   className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   height={720}
                   priority
-                  src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=80"
+                  src="/images/home/hero-students.jpg"
                   width={960}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent" />
+                
+                <div className="absolute right-3 top-3 flex items-center gap-1.5 rounded-full border border-orange-200/80 bg-white/95 px-3 py-1 text-[11px] font-bold text-[#EA580C] shadow-md backdrop-blur-xs">
+                  <span className="size-2 rounded-full bg-[#FE8C43] animate-pulse" />
+                  <span>PMB 2026/2027</span>
+                </div>
+
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <span className="text-[10px] font-bold uppercase tracking-wider text-orange-300">
                     Kampus A Rawamangun, Jakarta Timur
@@ -99,11 +105,21 @@ export function Hero() {
                     <span className="text-white/40">•</span>
                     <span>120+ Dosen &amp; Peneliti</span>
                     <span className="text-white/40">•</span>
-                    <a className="font-semibold text-orange-300 hover:text-white hover:underline inline-flex items-center gap-1" href="/profil/tentang-feb">
+                    <a className="font-bold text-orange-300 hover:text-white hover:underline inline-flex items-center gap-1" href="/profil/tentang-feb">
                       Profil <ArrowRight className="size-3" />
                     </a>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div className="absolute -bottom-4 -left-4 hidden xl:flex items-center gap-2.5 rounded-xl border border-orange-200/90 bg-white/95 px-4 py-2.5 shadow-xl backdrop-blur-md">
+              <div className="flex size-9 items-center justify-center rounded-lg bg-orange-100 text-[#EA580C]">
+                <Award className="size-5" />
+              </div>
+              <div>
+                <p className="text-xs font-bold text-slate-900">Standar Mutu Internasional</p>
+                <p className="text-[10px] font-bold text-[#EA580C]">BAN-PT &bull; LAMEMBA &bull; FIBAA</p>
               </div>
             </div>
           </div>

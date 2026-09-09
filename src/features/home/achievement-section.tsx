@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { ArrowRight, Medal, Sparkles, Trophy } from "lucide-react"
 
 interface AchievementItem {
@@ -113,6 +114,31 @@ export function AchievementSection() {
           ))}
         </div>
 
+        <div className="mt-10 overflow-hidden rounded-2xl border border-orange-200/80 bg-gradient-to-r from-orange-50/70 via-white to-orange-50/40 p-6 sm:p-7 flex flex-col md:flex-row items-center gap-6 shadow-xs">
+          <div className="relative aspect-[16/10] w-full md:w-64 shrink-0 overflow-hidden rounded-xl bg-orange-100 shadow-xs">
+            <Image
+              alt="Inovasi & Inkubator Bisnis Mahasiswa FEB UNJ"
+              className="size-full object-cover"
+              height={240}
+              src="/images/home/digital-business.jpg"
+              width={360}
+            />
+            <div className="absolute top-2 left-2 rounded bg-[#FE8C43] px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-white shadow-2xs">
+              Karya Inovasi
+            </div>
+          </div>
+          <div className="flex-1 space-y-1.5 text-left">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-[#EA580C]">
+              Inkubasi Bisnis &amp; Inovasi Digital
+            </span>
+            <h3 className="font-sans text-base sm:text-lg font-bold text-slate-900 leading-snug">
+              Mendorong Karya &amp; Startup Mahasiswa Menuju Panggung Nasional
+            </h3>
+            <p className="text-xs leading-relaxed text-slate-600 sm:text-sm">
+              Melalui Career Development Center (CDC) dan program inkubasi kewirausahaan FEB UNJ, tim mahasiswa mendapatkan pendampingan intensif, uji kelayakan bisnis, dan akses hibah Program Pembinaan Mahasiswa Wirausaha (P2MW).
+            </p>
+          </div>
+        </div>
 
         <div className="mt-10 border-t border-orange-200/80 pt-6 text-center sm:flex sm:items-center sm:justify-between">
           <p className="text-xs text-slate-500">
