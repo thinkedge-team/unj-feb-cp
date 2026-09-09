@@ -5,19 +5,19 @@
 :root {
   --color-unj-teal: #C2410C;
   --color-feb-copper: #EA580C;
-  --color-limestone: #FBF9F5;
+  --color-limestone: #FFF9F2;
   --color-white: #FFFFFF;
   --color-ink: #0F172A;
   --color-teal-deep: #9A3412;
   --color-teal-darkest: #7C2D12;
-  --color-teal-soft: #FFF7ED;
+  --color-teal-soft: #FFF3E6;
   --color-copper-deep: #9A3412;
-  --color-copper-light: #FFFBEB;
-  --color-teal-mist: #FFEDD5;
-  --color-border: #E2E8F0;
+  --color-copper-light: #FFF8EE;
+  --color-teal-mist: #FFEBD6;
+  --color-border: #F0E4D8;
   --color-muted: #64748B;
   --color-muted-ink: #334155;
-  --color-skeleton: #E2E8F0;
+  --color-skeleton: #F0E4D8;
   --color-gold: #D97706;
   --font-display: var(--font-plus-jakarta);
   --font-interface: var(--font-plus-jakarta);

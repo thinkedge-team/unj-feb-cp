@@ -4,12 +4,12 @@ export function DeanWelcome() {
   return (
     <section
       aria-labelledby="dean-welcome-heading"
-      className="border-b border-slate-200 bg-slate-50/50 py-16 md:py-24"
+      className="border-b border-[#F0E4D8] bg-[#FFF9F2] py-16 md:py-24"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-5">
-            <div className="group overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:shadow-card-hover hover:border-[#006569]/50">
+            <div className="group overflow-hidden rounded-2xl border border-orange-100/90 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:shadow-card-hover hover:border-[#C2410C]/50">
               <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-slate-100">
                 <img
                   alt="Potret Dekan Fakultas Ekonomi dan Bisnis Universitas Negeri Jakarta"

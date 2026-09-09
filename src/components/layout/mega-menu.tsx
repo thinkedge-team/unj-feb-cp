@@ -29,13 +29,13 @@ export function MegaMenu({ activeGroup, isOpen, onClose }: MegaMenuProps) {
   return (
     <div
       aria-label={`${activeGroup.title} submenu`}
-      className="animate-fade-in absolute left-0 right-0 top-full z-30 border-b border-slate-200 bg-white shadow-xl"
+      className="animate-fade-in absolute left-0 right-0 top-full z-30 border-b border-[#F0E4D8] bg-white shadow-xl"
       id={id}
       role="region"
     >
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[240px_1fr]">
-          <div className="border-b border-slate-100 pb-4 lg:border-b-0 lg:border-r lg:pr-6 lg:pb-0">
+          <div className="border-b border-orange-100 pb-4 lg:border-b-0 lg:border-r lg:pr-6 lg:pb-0">
             <span className="text-[10px] font-bold uppercase tracking-wider text-[#EA580C]">
               Navigasi
             </span>

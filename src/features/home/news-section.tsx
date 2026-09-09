@@ -16,10 +16,10 @@ export function NewsSection() {
   return (
     <section
       aria-labelledby="news-section-heading"
-      className="border-b border-slate-200 bg-slate-50/50 py-16 md:py-20"
+      className="border-b border-[#F0E4D8] bg-[#FFF9F2] py-16 md:py-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col justify-between gap-4 border-b border-slate-200 pb-8 md:flex-row md:items-end">
+        <div className="flex flex-col justify-between gap-4 border-b border-orange-100 pb-8 md:flex-row md:items-end">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-[#EA580C]">
               Jurnalisme &amp; Dokumentasi
@@ -41,7 +41,7 @@ export function NewsSection() {
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-12 items-stretch">
-          <article className="group flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-xs transition-all duration-300 ease-out hover:border-[#C2410C] hover:-translate-y-1 hover:shadow-card-hover lg:col-span-7">
+          <article className="group flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-orange-100/90 bg-white shadow-xs transition-all duration-300 ease-out hover:border-[#C2410C] hover:-translate-y-1 hover:shadow-card-hover lg:col-span-7">
             <div>
               <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
                 <img

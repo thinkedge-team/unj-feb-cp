@@ -29,10 +29,10 @@ export function ProgramExplorer() {
   return (
     <section
       aria-labelledby="program-explorer-heading"
-      className="border-b border-slate-200 bg-slate-50/50 py-16 md:py-20"
+      className="border-b border-[#F0E4D8] bg-[#FFF9F2] py-16 md:py-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col justify-between gap-4 border-b border-slate-200 pb-8 md:flex-row md:items-end">
+        <div className="flex flex-col justify-between gap-4 border-b border-orange-100 pb-8 md:flex-row md:items-end">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-[#EA580C]">
               Pilihan Pendidikan Tinggi
@@ -59,7 +59,7 @@ export function ProgramExplorer() {
         </div>
 
         <div className="mt-8 flex flex-wrap gap-2" role="tablist" aria-label="Kategori Jenjang Program Studi">
-          <div className="inline-flex flex-wrap gap-1 rounded-lg border border-slate-200 bg-white p-1 shadow-sm">
+          <div className="inline-flex flex-wrap gap-1 rounded-lg border border-orange-200/80 bg-white p-1 shadow-sm">
             {degreeTabs.map((tab) => {
               const isActive = activeTab === tab
               return (
@@ -90,7 +90,7 @@ export function ProgramExplorer() {
 
         <div className="mt-12 text-center">
           <a
-            className="inline-flex min-h-11 items-center gap-2 rounded-lg border border-slate-200 bg-white px-6 py-2.5 text-xs font-semibold text-slate-700 shadow-sm transition-colors hover:bg-slate-50 hover:text-slate-900"
+            className="inline-flex min-h-11 items-center gap-2 rounded-lg border border-orange-200/80 bg-white px-6 py-2.5 text-xs font-semibold text-slate-700 shadow-sm transition-colors hover:bg-orange-50/50 hover:text-slate-900"
             href="/program-studi"
           >
             <span>Lihat Semua 21 Program Studi &amp; Jalur Masuk</span>

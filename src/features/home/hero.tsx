@@ -5,12 +5,12 @@ export function Hero() {
   return (
     <section
       aria-labelledby="hero-title"
-      className="relative overflow-hidden border-b border-slate-200 bg-white py-12 md:py-16 lg:py-20"
+      className="relative overflow-hidden border-b border-[#F0E4D8] bg-gradient-to-b from-[#FFF5EA] via-[#FFF9F2] to-[#FFFDFB] py-12 md:py-16 lg:py-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
           <div className="space-y-6 lg:col-span-7">
-            <div className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-2xs">
+            <div className="inline-flex items-center gap-2 rounded-lg border border-orange-200/80 bg-white/90 px-3 py-1 text-xs font-semibold text-slate-700 shadow-2xs">
               <span className="text-[#C2410C] font-bold">FEB UNJ</span>
               <span className="text-slate-300">|</span>
               <span className="inline-flex items-center gap-1 text-slate-600">
@@ -41,7 +41,7 @@ export function Hero() {
                 <ArrowRight aria-hidden="true" className="size-4 transition-transform duration-200 group-hover:translate-x-0.5" />
               </a>
               <a
-                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 shadow-2xs transition-all duration-200 hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900 active:scale-[0.98]"
+                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-orange-200/80 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 shadow-2xs transition-all duration-200 hover:border-orange-300 hover:bg-orange-50/50 hover:text-slate-900 active:scale-[0.98]"
                 href="/dokumen"
               >
                 <Download aria-hidden="true" className="size-4 text-slate-500" />
@@ -51,7 +51,7 @@ export function Hero() {
 
             <form
               action="/informasi"
-              className="mt-4 flex max-w-md items-center rounded-lg border border-slate-200 bg-slate-50/70 p-1 transition-all duration-200 focus-within:border-[#C2410C] focus-within:bg-white focus-within:ring-2 focus-within:ring-[#C2410C]/20 shadow-2xs"
+              className="mt-4 flex max-w-md items-center rounded-lg border border-orange-200/80 bg-white/95 p-1 transition-all duration-200 focus-within:border-[#C2410C] focus-within:bg-white focus-within:ring-2 focus-within:ring-[#C2410C]/20 shadow-2xs"
               method="get"
               role="search"
             >

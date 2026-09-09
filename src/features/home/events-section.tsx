@@ -9,10 +9,10 @@ export function EventsSection() {
   return (
     <section
       aria-labelledby="events-section-heading"
-      className="border-b border-slate-200 bg-white py-16 md:py-20"
+      className="border-b border-[#F0E4D8] bg-white py-16 md:py-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col justify-between gap-4 border-b border-slate-200 pb-8 md:flex-row md:items-end">
+        <div className="flex flex-col justify-between gap-4 border-b border-orange-100 pb-8 md:flex-row md:items-end">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-[#EA580C]">
               Kalender Ilmiah &amp; Seminar
@@ -43,7 +43,7 @@ export function EventsSection() {
           ))}
         </div>
 
-        <div className="mt-10 rounded-xl border border-slate-200 bg-slate-50 p-6 flex flex-col items-center justify-between gap-4 sm:flex-row sm:px-8 transition-all duration-300 hover:shadow-sm hover:border-slate-300">
+        <div className="mt-10 rounded-xl border border-orange-200/70 bg-orange-50/40 p-6 flex flex-col items-center justify-between gap-4 sm:flex-row sm:px-8 transition-all duration-300 hover:shadow-sm hover:border-orange-300">
           <div className="flex items-center gap-3.5">
             <span className="flex size-10 items-center justify-center rounded-lg bg-white border border-slate-200 text-[#EA580C] shadow-2xs">
               <CalendarDays aria-hidden="true" className="size-5" />

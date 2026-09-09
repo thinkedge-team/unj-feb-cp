@@ -14,12 +14,12 @@ export function FacultySpotlight() {
   return (
     <section
       aria-labelledby="faculty-spotlight-heading"
-      className="border-b border-slate-200 bg-white py-16 md:py-20"
+      className="border-b border-[#F0E4D8] bg-white py-16 md:py-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col justify-between gap-4 border-b border-slate-200 pb-8 md:flex-row md:items-end">
+        <div className="flex flex-col justify-between gap-4 border-b border-orange-100 pb-8 md:flex-row md:items-end">
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-[#C45F18]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#EA580C]">
               Tenaga Pendidik &amp; Peneliti
             </span>
             <h2
@@ -30,7 +30,7 @@ export function FacultySpotlight() {
             </h2>
           </div>
           <a
-            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[#006569] hover:text-[#C45F18] transition-colors"
+            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-[#C2410C] hover:text-[#EA580C] transition-colors"
             href="/sdm/dosen"
           >
             <span>Direktori Dosen</span>
@@ -50,7 +50,7 @@ export function FacultySpotlight() {
 
         <div className="mt-12 text-center">
           <a
-            className="group inline-flex min-h-11 items-center gap-3 rounded-full border border-slate-300/80 bg-slate-50 px-8 py-3 text-xs font-bold uppercase tracking-wider text-slate-800 shadow-sm transition-all duration-300 hover:border-orange-600/50 hover:bg-white hover:text-orange-950 hover:shadow"
+            className="group inline-flex min-h-11 items-center gap-3 rounded-full border border-orange-200/80 bg-orange-50/40 px-8 py-3 text-xs font-bold uppercase tracking-wider text-slate-800 shadow-sm transition-all duration-300 hover:border-orange-600/50 hover:bg-white hover:text-orange-950 hover:shadow"
             href="/sdm/dosen"
           >
             <span>Jelajahi Seluruh 120+ Profil Tenaga Pendidik</span>

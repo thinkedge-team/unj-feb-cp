@@ -4,12 +4,12 @@ export function AcademicHighlights() {
   return (
     <section
       aria-labelledby="academic-highlights-heading"
-      className="border-b border-slate-200 bg-white py-16 md:py-20"
+      className="border-b border-[#F0E4D8] bg-white py-16 md:py-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="space-y-6 lg:col-span-5">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#C45F18]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#EA580C]">
               Tonggak Mutu &amp; Diferensiasi
             </span>
             <h2

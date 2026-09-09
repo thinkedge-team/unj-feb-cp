@@ -52,7 +52,7 @@ export function Header() {
 
   return (
     <header
-      className="sticky top-0 z-40 border-b border-slate-200 bg-white shadow-xs"
+      className="sticky top-0 z-40 border-b border-[#F0E4D8] bg-white shadow-xs"
       onBlur={closeWhenFocusLeaves}
       onKeyDown={closeOnEscape}
       role="banner"

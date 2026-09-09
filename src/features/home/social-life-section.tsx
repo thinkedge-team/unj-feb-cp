@@ -4,12 +4,12 @@ export function SocialLifeSection() {
   return (
     <section
       aria-labelledby="social-life-heading"
-      className="border-b border-slate-200 bg-white py-16 md:py-20"
+      className="border-b border-[#F0E4D8] bg-white py-16 md:py-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="space-y-6 lg:col-span-6">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#C45F18]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#EA580C]">
               Komunitas &amp; Pengembangan Diri
             </span>
             <h2
@@ -25,8 +25,8 @@ export function SocialLifeSection() {
             </p>
 
             <div className="space-y-4 pt-2">
-              <div className="flex items-start gap-4 rounded-2xl border border-slate-100 bg-slate-50/70 p-4 transition-colors hover:bg-teal-50/50">
-                <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-teal-100/70 text-teal-900">
+              <div className="flex items-start gap-4 rounded-2xl border border-orange-100 bg-[#FFFDFB] p-4 transition-colors hover:bg-orange-50/60">
+                <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-orange-100/70 text-orange-900">
                   <HeartHandshake aria-hidden="true" className="size-5" />
                 </span>
                 <div>
@@ -39,8 +39,8 @@ export function SocialLifeSection() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 rounded-2xl border border-slate-100 bg-slate-50/70 p-4 transition-colors hover:bg-teal-50/50">
-                <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-teal-100/70 text-teal-900">
+              <div className="flex items-start gap-4 rounded-2xl border border-orange-100 bg-[#FFFDFB] p-4 transition-colors hover:bg-orange-50/60">
+                <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-orange-100/70 text-orange-900">
                   <Compass aria-hidden="true" className="size-5" />
                 </span>
                 <div>

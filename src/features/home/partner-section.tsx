@@ -6,10 +6,10 @@ export function PartnerSection() {
   return (
     <section
       aria-labelledby="partner-section-heading"
-      className="border-b border-slate-200 bg-slate-50/50 py-16 md:py-20"
+      className="border-b border-[#F0E4D8] bg-[#FFF9F2] py-16 md:py-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col justify-between gap-4 border-b border-slate-200 pb-8 md:flex-row md:items-end">
+        <div className="flex flex-col justify-between gap-4 border-b border-orange-100 pb-8 md:flex-row md:items-end">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-[#EA580C]">
               Ekosistem Kolaboratif
@@ -34,7 +34,7 @@ export function PartnerSection() {
           {partners.map((partner) => (
             <div
               key={partner.slug}
-              className="group flex min-h-28 flex-col items-center justify-center rounded-2xl border border-slate-200/80 bg-white p-4 text-center shadow-sm transition-all duration-300 hover:border-orange-500/50 hover:shadow-md hover:-translate-y-0.5"
+              className="group flex min-h-28 flex-col items-center justify-center rounded-2xl border border-orange-100/90 bg-white p-4 text-center shadow-sm transition-all duration-300 hover:border-orange-500/50 hover:shadow-md hover:-translate-y-0.5"
             >
               <span className="flex size-10 items-center justify-center rounded-xl bg-slate-50 text-slate-400 group-hover:bg-orange-50 group-hover:text-orange-900 transition-colors">
                 <Building2 aria-hidden="true" className="size-5" strokeWidth={1.75} />

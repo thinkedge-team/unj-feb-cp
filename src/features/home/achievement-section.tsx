@@ -48,10 +48,10 @@ export function AchievementSection() {
   return (
     <section
       aria-labelledby="achievement-section-heading"
-      className="border-b border-slate-200 bg-white py-16 md:py-20"
+      className="border-b border-[#F0E4D8] bg-[#FFF9F2] py-16 md:py-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col justify-between gap-4 border-b border-slate-200 pb-8 md:flex-row md:items-end">
+        <div className="flex flex-col justify-between gap-4 border-b border-orange-100 pb-8 md:flex-row md:items-end">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-[#EA580C]">
               Rekam Jejak Keunggulan
@@ -76,7 +76,7 @@ export function AchievementSection() {
           {achievements.map((item) => (
             <div
               key={item.title}
-              className="group flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#C2410C] hover:-translate-y-1 hover:shadow-card-hover"
+              className="group flex h-full flex-col justify-between rounded-xl border border-orange-100/90 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-[#C2410C] hover:-translate-y-1 hover:shadow-card-hover"
             >
               <div>
                 <div className="flex items-center justify-between">
