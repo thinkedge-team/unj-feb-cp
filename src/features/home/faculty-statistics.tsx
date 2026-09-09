@@ -36,9 +36,12 @@ export function FacultyStatistics() {
   return (
     <section
       aria-labelledby="faculty-statistics-heading"
-      className="border-b border-orange-300 bg-gradient-to-r from-[#F97316] via-[#FE8C43] to-[#F97316] py-16 md:py-20 text-white shadow-xl shadow-orange-500/10"
+      className="relative overflow-hidden border-b border-orange-300 bg-gradient-to-r from-[#EA580C] via-[#FE8C43] to-[#F97316] py-16 md:py-20 text-white shadow-xl shadow-orange-500/15"
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="absolute inset-0 bg-academic-grid opacity-20 pointer-events-none mix-blend-overlay" />
+      <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-white/10 blur-2xl pointer-events-none" />
+
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-between gap-6 border-b border-white/30 pb-8 lg:flex-row lg:items-end">
           <div className="max-w-xl">
             <span className="inline-block rounded-md bg-white/25 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-orange-950 backdrop-blur-xs">

@@ -4,9 +4,12 @@ export function AspirationCTA() {
   return (
     <section
       aria-labelledby="aspiration-cta-heading"
-      className="border-b border-orange-300 bg-gradient-to-r from-[#EA580C] via-[#FE8C43] to-[#F97316] py-16 text-white md:py-20 shadow-xl shadow-orange-500/20"
+      className="relative overflow-hidden border-b border-orange-300 bg-gradient-to-r from-[#EA580C] via-[#FE8C43] to-[#F97316] py-16 text-white md:py-20 shadow-xl shadow-orange-500/20"
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="absolute inset-0 bg-academic-grid opacity-20 pointer-events-none mix-blend-overlay" />
+      <div className="absolute top-0 right-0 -z-10 h-72 w-72 rounded-full bg-white/15 blur-2xl pointer-events-none" />
+
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
           <div className="space-y-3 lg:col-span-8">
             <span className="text-xs font-bold uppercase tracking-wider text-orange-950 bg-white/25 px-2.5 py-1 rounded-md inline-block">

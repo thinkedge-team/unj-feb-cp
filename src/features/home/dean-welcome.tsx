@@ -4,9 +4,12 @@ export function DeanWelcome() {
   return (
     <section
       aria-labelledby="dean-welcome-heading"
-      className="border-b border-[#F0E4D8] bg-[#FFF9F2] py-16 md:py-24"
+      className="relative overflow-hidden border-b border-[#F0E4D8] bg-[#FFF9F2] py-16 md:py-24"
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="absolute inset-0 bg-academic-dots opacity-50 pointer-events-none [mask-image:radial-gradient(ellipse_70%_70%_at_50%_50%,#000_50%,transparent_100%)]" />
+      <div className="absolute top-1/2 -right-24 -z-10 h-96 w-96 -translate-y-1/2 rounded-full bg-orange-300/15 blur-3xl pointer-events-none" />
+
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-5">
             <div className="group overflow-hidden rounded-2xl border border-orange-100/90 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:shadow-card-hover hover:border-[#FE8C43]">

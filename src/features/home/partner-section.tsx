@@ -6,9 +6,11 @@ export function PartnerSection() {
   return (
     <section
       aria-labelledby="partner-section-heading"
-      className="border-b border-[#F0E4D8] bg-[#FFF9F2] py-16 md:py-20"
+      className="relative overflow-hidden border-b border-[#F0E4D8] bg-[#FFF9F2] py-16 md:py-20"
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="absolute inset-0 bg-academic-dots opacity-40 pointer-events-none" />
+
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-between gap-4 border-b border-orange-100 pb-8 md:flex-row md:items-end">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-[#EA580C]">

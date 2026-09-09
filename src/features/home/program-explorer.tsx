@@ -29,9 +29,11 @@ export function ProgramExplorer() {
   return (
     <section
       aria-labelledby="program-explorer-heading"
-      className="border-b border-[#F0E4D8] bg-[#FFF9F2] py-16 md:py-20"
+      className="relative overflow-hidden border-b border-[#F0E4D8] bg-[#FFF9F2] py-16 md:py-20"
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="absolute inset-0 bg-academic-grid opacity-35 pointer-events-none [mask-image:radial-gradient(ellipse_75%_65%_at_50%_40%,#000_50%,transparent_100%)]" />
+
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-between gap-4 border-b border-orange-100 pb-8 md:flex-row md:items-end">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-[#EA580C]">
