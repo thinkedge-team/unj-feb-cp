@@ -175,7 +175,7 @@ describe("Section 3: Dean's Welcome", () => {
     render(<DeanWelcome />)
     expect(screen.getAllByText(/Dekan/i).length).toBeGreaterThan(0)
     // Should render dean identity
-    expect(screen.getAllByText(/Usep Suhud|Yusuf Santoso/i).length).toBeGreaterThan(0)
+    expect(screen.getAllByText(/Yusuf Santoso/i).length).toBeGreaterThan(0)
     expect(screen.getByText(/Selamat Datang di Fakultas Ekonomi dan Bisnis/i)).toBeDefined()
   })
 })

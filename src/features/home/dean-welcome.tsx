@@ -40,14 +40,14 @@ export function DeanWelcome() {
                     Dekan FEB UNJ
                   </span>
                   <h3 className="mt-2 font-sans text-xl font-bold tracking-tight text-white">
-                    Prof. Dr. Usep Suhud, M.Si.
+                    Prof. Dr. M. Yusuf Santoso, M.M.
                   </h3>
                 </div>
               </div>
 
               <div className="mt-5">
                 <p className="text-xs font-semibold text-slate-700">
-                  Guru Besar Bidang Pemasaran &amp; Perilaku Konsumen
+                  Guru Besar Bidang Manajemen &amp; Kepemimpinan Organisasi
                 </p>
                 <p className="mt-0.5 text-xs text-slate-500">
                   Fakultas Ekonomi dan Bisnis Universitas Negeri Jakarta
@@ -56,7 +56,7 @@ export function DeanWelcome() {
                 <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-4">
                   <div>
                     <div className="font-sans text-base font-bold text-slate-900">
-                      Prof. Dr. Usep Suhud
+                      Prof. Dr. M. Yusuf Santoso
                     </div>
                     <span className="text-[10px] text-slate-400">
                       Dekan Periode Berjalan

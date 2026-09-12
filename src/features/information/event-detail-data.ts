@@ -13,7 +13,7 @@ export type EventScheduleItem = Readonly<{
 
 export const defaultEventSpeakers: readonly EventSpeaker[] = [
   {
-    name: "Prof. Dr. Ari Kuncoro, S.E., M.A.",
+    name: "Prof. Dr. Aditya Pratama, S.E., M.A.",
     title: "Guru Besar & Peneliti Senior Ekonomi",
     institution: "Pusat Studi Kebijakan Ekonomi Nasional",
     topic: "Transformasi Struktur Ekonomi Berkelanjutan",
